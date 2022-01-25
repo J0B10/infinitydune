@@ -30,7 +30,12 @@ config/splash.properties
 !patchouli_books
 !patchouli_books/**
 
-#except recurrent complex structures
+# except recurrent complex structures
 !structures
 !structures/**
 
+# except build utils
+!build
+!build/**
+build/out
+build/generate.py

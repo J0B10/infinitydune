@@ -1,0 +1,6 @@
+config/
+patchouli_books/
+resources/
+scripts/
+structures/
+LICENSE
