@@ -1,14 +1,15 @@
 # [WorkingTitle] `infinitydune` 
-
-## TODO
-
 ## Progression
 
 ### Stone Age
-Get food fom cactus & harvestcraft arid gardens.
-Get Dirt from sand (Pure Daisy)
-Get Oak Saplings from DeadBush (Pure Daisy)
-Pure Daisy spawns naturaly
+* [ ] Get food fom cactus & harvestcraft arid gardens  
+* [x] DeadBushes provide sticks  
+* [ ] Paterns are craftable from sticks  
+* [ ] Tool stations should be craftable without crafting table  
+* [ ] Get Dirt from sand (Pure Daisy) or find it (oasis)  
+* [ ] Get Oak Saplings from DeadBush (Pure Daisy)  
+* [x] Pure Daisy spawns naturaly  
+* [ ] Water must be discovered (caves / oasis / wells)  
 
 ## Recurrent Complex Structures
 See https://minecraft-recurrent-complex.fandom.com/wiki/Disabling_Structures for how to disable structures.
