@@ -1,0 +1,32 @@
+# Ignore everything...
+*
+
+# except for git files
+!.gitignore
+!.github
+!.github/**
+
+# except scripts
+!scripts
+!scripts/**
+
+# except custom resources
+!resources
+!resources/**
+
+# except config files
+!config
+!config/**
+
+# but explitly ignore jei & splash
+config/jei
+config/splash.properties
+
+# except the readme & modpack icon
+!readme.md
+!icon.png
+
+# except patchouli books folder
+!patchouli_books
+!patchouli_books/**
+
