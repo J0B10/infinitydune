@@ -9,9 +9,16 @@
 * [x] Get Dirt from sand (Pure Daisy) or find it (oasis)  
 * [x] Get Oak Saplings from DeadBush (Pure Daisy)  
 * [x] Pure Daisy spawns naturaly  
-* [ ] Water must be discovered (caves / oasis / wells)  
+* [x] Water must be discovered (caves / oasis / wells)  
 * [ ] Should the player be able to get a crafting table in stone age???  
-      Maybe a different rcipe is needed
+      Maybe a different recipe is needed
+
+### Copper Age
+* [ ] Only Coal, Copper & Tin ores should generate (maybe also iron with more restrictions)
+* [ ] Ores can't smelt in oven
+* [ ] Grout for smeltery based on heavy mix lump
+* [ ] Heavy ingot in smeltery
+
 
 
 
