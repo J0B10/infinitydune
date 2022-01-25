@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "weight": 2.0680112838745117,
+      "block": "minecraft:coal_block",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 1.607102632522583,
+      "block": "minecraft:planks",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:log",
+      "metadata": 4,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:log",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:log",
+      "metadata": 8,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Burning",
+    "description": [
+      "Burnable Material (Coal, Oak Planks \u0026 Logs)"
+    ]
+  }
+}

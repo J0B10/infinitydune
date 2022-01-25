@@ -30,3 +30,7 @@ config/splash.properties
 !patchouli_books
 !patchouli_books/**
 
+#except recurrent complex structures
+!structures
+!structures/**
+

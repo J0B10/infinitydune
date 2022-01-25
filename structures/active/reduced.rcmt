@@ -1,0 +1,23 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "naturalAir",
+        "transformer": {
+          "id": "naturalAir_ba3b50f3",
+          "sourceExpression": "reccomplex:generic_space \u0026 metadata\u003d1",
+          "destExpression": "",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 10.0
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "reduced",
+    "description": [
+      "naturalAir only"
+    ]
+  }
+}

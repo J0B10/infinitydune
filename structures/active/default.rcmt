@@ -1,0 +1,41 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "natural",
+        "transformer": {
+          "id": "3b35252f",
+          "sourceExpression": "reccomplex:naturalFloor \u0026 metadata\u003d0",
+          "destExpression": "is:replaceable | is:foliage",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 6.0
+        }
+      },
+      {
+        "type": "negativeSpace",
+        "transformer": {
+          "id": "d2c9d530",
+          "sourceExpression": "reccomplex:negativeSpace \u0026 metadata\u003d0",
+          "destExpression": ""
+        }
+      },
+      {
+        "type": "naturalAir",
+        "transformer": {
+          "id": "e4b1f959",
+          "sourceExpression": "reccomplex:negativeSpace \u0026 metadata\u003d1",
+          "destExpression": "",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 10.0
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Default",
+    "description": [
+      "naturalFloor, naturalSpace \u0026 naturalAir (copied from DesertBeacon)"
+    ]
+  }
+}

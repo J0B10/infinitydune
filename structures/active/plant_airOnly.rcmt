@@ -1,0 +1,23 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "naturalAir",
+        "transformer": {
+          "id": "e4b1f959",
+          "sourceExpression": "reccomplex:negativeSpace \u0026 metadata\u003d1",
+          "destExpression": "",
+          "naturalExpansionDistance": 4.0,
+          "naturalExpansionRandomization": 10.0
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Plant",
+    "description": [
+      "Preset for small plants, transfroms only naturalAir"
+    ]
+  }
+}
