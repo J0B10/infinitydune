@@ -15,9 +15,6 @@ recipes.addShaped("stoneAge/blank_pattern", <tconstruct:pattern>, [
 val tool_rod_pattern = <tconstruct:pattern>.withTag({PartType: "tconstruct:tool_rod"});
 recipes.addShapeless("stoneAge/tool_rod_pattern", tool_rod_pattern, [<tconstruct:pattern:0>, <ore:stickWood>]);
 
-//Stenicl Table is no longer needed
-disable(<tconstruct:tooltables:1>);
-
 //Part Builder
 var part_builder = <tconstruct:tooltables:2>.withTag({
     textureBlock: {
