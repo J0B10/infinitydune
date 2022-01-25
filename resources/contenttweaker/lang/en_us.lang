@@ -1,1 +1,4 @@
 itemGroup.pack=Modpack Content
+tile.contenttweaker.heavy_mesh_block.name=Heavy Mix Block
+material.heavy_ingot.name=Heavy Material
+fluid.heavy_fluid=Heavy Fluid

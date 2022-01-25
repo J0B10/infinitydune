@@ -16,9 +16,7 @@ function blockString(block as IBlock) as string {
 // register drop event handler
 events.onBlockHarvestDrops(function(event as BlockHarvestDropsEvent) {
     val block = blockString(event.block);
-        print("test1");
     if (customDrops.keys has block) {
-        print("test2");
         event.dropChance = 1.0;
         event.drops = customDrops[block];
     }
