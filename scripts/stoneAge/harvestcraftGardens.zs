@@ -2,14 +2,22 @@
 import crafttweaker.item.IItemStack;
 import moretweaker.jei.MoreJei;
 
-function createGardenDescription(variant as string, args as IItemStack[]) {
-    for i in args {
-        MoreJei.addDescription(i, ["Dropped by " + variant + " Gardens"]);
+function createGardenDescription(garden as IItemStack, args as IItemStack[]) {
+    val variant = garden.displayName;
+    var s = "Drops ";
+    for i, item in args {
+        if (i > 0 && i < args.length - 1) {
+            s ~= ", " ~ item.displayName;
+        } else if (i == args.length - 1) {
+            s ~= " & " ~ item.displayName ~ ".";
+        }
+        MoreJei.addDescription(item, ["Dropped by " ~ variant ~ "s"]);
     }
+        MoreJei.addDescription(garden, [s]);
 }
 
 //aridGarden
-createGardenDescription("Arid", [
+createGardenDescription(<harvestcraft:aridgarden>, [
     <harvestcraft:cactusfruititem>,
     <harvestcraft:agaveitem>,
     <harvestcraft:sisalitem>,
@@ -20,7 +28,7 @@ createGardenDescription("Arid", [
 ]) ;
 
 //frostGarden
-createGardenDescription("Frost", [
+createGardenDescription(<harvestcraft:frostgarden>, [
     <harvestcraft:raspberryitem>,
     <harvestcraft:oatsitem>,
     <harvestcraft:ryeitem>,
@@ -40,7 +48,7 @@ createGardenDescription("Frost", [
 ]);
 
 //shadedGarden
-createGardenDescription("Shaded", [
+createGardenDescription(<harvestcraft:shadedgarden>, [
     <harvestcraft:whitemushroomitem>,
     <harvestcraft:blackberryitem>,
     <harvestcraft:zucchiniitem>,
@@ -59,7 +67,7 @@ createGardenDescription("Shaded", [
 ]);
 
 //soggyGarden
-createGardenDescription("Soggy", [
+createGardenDescription(<harvestcraft:soggygarden>, [
     <harvestcraft:brusselsproutitem>,
     <harvestcraft:spiceleafitem>,
     <harvestcraft:blueberryitem>,
@@ -79,7 +87,7 @@ createGardenDescription("Soggy", [
 ]);
 
 //tropicalGarden
-createGardenDescription("Tropical", [
+createGardenDescription(<harvestcraft:tropicalgarden>, [
     <harvestcraft:grapeitem>,
     <harvestcraft:pineappleitem>,
     <harvestcraft:kiwiitem>,
@@ -97,7 +105,7 @@ createGardenDescription("Tropical", [
 ]);
 
 //windyGarden
-createGardenDescription("Windy", [
+createGardenDescription(<harvestcraft:windygarden>, [
     <harvestcraft:strawberryitem>,
     <harvestcraft:barleyitem>,
     <harvestcraft:cornitem>,

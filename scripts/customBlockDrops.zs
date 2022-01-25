@@ -10,7 +10,7 @@ static customDrops as WeightedItemStack[][string] = {};
 
 //helper methoid creating a blockstring from block for robust matching
 function blockString(block as IBlock) as string {
-    return block.definition.id + ":" + block.meta;
+    return block.definition.id ~ ":" ~ block.meta;
 }
 
 // register drop event handler
