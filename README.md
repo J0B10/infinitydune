@@ -4,10 +4,10 @@
 ### Stone Age
 * [ ] Get food fom cactus & harvestcraft arid gardens  
 * [x] DeadBushes provide sticks  
-* [ ] Paterns are craftable from sticks  
-* [ ] Tool stations should be craftable without crafting table  
-* [ ] Get Dirt from sand (Pure Daisy) or find it (oasis)  
-* [ ] Get Oak Saplings from DeadBush (Pure Daisy)  
+* [x] Patterns are craftable from sticks  
+* [x] Tool stations should be craftable without crafting table  
+* [x] Get Dirt from sand (Pure Daisy) or find it (oasis)  
+* [x] Get Oak Saplings from DeadBush (Pure Daisy)  
 * [x] Pure Daisy spawns naturaly  
 * [ ] Water must be discovered (caves / oasis / wells)  
 
