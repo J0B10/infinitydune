@@ -2,7 +2,7 @@
 ## Progression
 
 ### Stone Age
-* [ ] Get food fom cactus & harvestcraft arid gardens  
+* [x] Get food fom cactus & harvestcraft arid gardens  
 * [x] DeadBushes provide sticks  
 * [x] Patterns are craftable from sticks  
 * [x] Tool stations should be craftable without crafting table  
@@ -10,6 +10,10 @@
 * [x] Get Oak Saplings from DeadBush (Pure Daisy)  
 * [x] Pure Daisy spawns naturaly  
 * [ ] Water must be discovered (caves / oasis / wells)  
+* [ ] Should the player be able to get a crafting table in stone age???  
+      Maybe a different rcipe is needed
+
+
 
 ## Recurrent Complex Structures
 See https://minecraft-recurrent-complex.fandom.com/wiki/Disabling_Structures for how to disable structures.
