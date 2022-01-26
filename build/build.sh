@@ -38,6 +38,8 @@ while read f; do
   echo "    copied $f"
 done <overrides.txt
 
+cp "../LICENSE" "out"
+
 # generate manifest
 
 echo "Generating manifest:"
