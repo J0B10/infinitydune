@@ -48,4 +48,4 @@ python3 generate.py
 echo "Copy manifest"
 mv manifest.json out
 
-read -p "Press [Enter] key to continue..."
+echo "Done."

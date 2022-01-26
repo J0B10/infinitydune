@@ -1,0 +1,31 @@
+---
+name: "pre-release"
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: "Build"
+        working-directory: build
+        run: ./build.sh
+      
+      - name: "Zip"
+        working-directory: build/out
+        run: "zip -r ../infinitydune-dev${{ github.run_number }}.zip ."
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "dev-build"
+          prerelease: true
+          title: "Development Build"
+          files: "build/infinitydune-dev${{ github.run_number }}.zip"
