@@ -39,3 +39,7 @@ config/splash.properties
 !build/**
 build/out
 build/generate.py
+
+# except crafttweaker dump 
+!crafttweaker_dump
+!crafttweaker_dump/**
