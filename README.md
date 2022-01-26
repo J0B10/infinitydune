@@ -1,4 +1,17 @@
 # [WorkingTitle] `infinitydune` 
+
+You find yourself out in a never ending dessert with nothing to do and everything looking to kill you.  
+Even the wood for a crafting table is missing!  
+But if you look carefully the dessert provides you with a lot of stuff that you can use to improve your situation.  
+Just think out of the box!
+
+**Build for multimc**: read [`build/README.md`](build/), releases will come when it's ready  
+
+**ZenScript Dump:** on [`github pages`](https://j0b10.github.io/infinitydune/crafttweaker_dump/tree3.html)  
+
+**Is this on curseforge?**  
+Not for now, just use multimc! You will not regret. :smile:
+
 ## Progression
 
 ### Stone Age
@@ -20,6 +33,7 @@
 * [ ] Heavy ingot in smeltery
 
 
+## Modlist
 
 
 ## Recurrent Complex Structures
