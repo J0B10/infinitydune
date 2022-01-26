@@ -1,6 +1,9 @@
 # Ignore everything...
 *
 
+# except for LICENSE
+!LICENSE
+
 # except for git files
 !.gitignore
 !.github
