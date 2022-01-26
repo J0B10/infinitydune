@@ -5,6 +5,8 @@ Even the wood for a crafting table is missing!
 But if you look carefully the dessert provides you with a lot of stuff that you can use to improve your situation.  
 Just think out of the box!
 
+**[:file_folder: Download Modpack Dev-Builds](https://github.com/J0B10/infinitydune/releases)**
+
 **Build for multimc**: read [`build/README.md`](build/), releases will come when it's ready  
 
 **ZenScript Dump:** on [`github pages`](https://j0b10.github.io/infinitydune/crafttweaker_dump/tree3.html)  
