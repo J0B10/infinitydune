@@ -1,17 +1,13 @@
 #priority 9
 import scripts.utils.disable;
+import scripts.utils.disableAll;
 import crafttweaker.item.IItemStack;
 
-val disabled as IItemStack[] = [
- 
-    //Botania
-    <botania:grassseeds:8>,
+// Botania
+disable(<botania:grassseeds:8>);
 
-    //Tinkers Construct
-    <tconstruct:tooltables:1>
+//Immersive Engineering
+disableAll(<immersiveengineering:ore>, 0, 5);
 
-];
-
-for i in disabled {
-    disable(i);
-}
+//Tinkers Construct
+disable(<tconstruct:tooltables:1>);

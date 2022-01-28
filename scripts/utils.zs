@@ -5,7 +5,15 @@ import crafttweaker.item.IIngredient;
 // Disable item by removing crafting recipes and hiding
 function disable(input as IItemStack) {
     recipes.remove(input);
+    furnace.remove(input);
     mods.jei.JEI.removeAndHide(input);
+}
+
+// Disable all items in the given meta range by removing crafting recipes and hiding
+function disableAll(input as IItemStack, metaFrom as int, metaTo as int) {
+    for i in metaFrom to metaTo {
+        disable(input.definition.makeStack(i));
+    }
 }
 
 
