@@ -6,6 +6,7 @@ import mods.contenttweaker.tconstruct.MaterialBuilder;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
+import mods.contenttweaker.Item;
 
 //Heavy mix lump block, for grout crafting
 val heavy_mesh_block = VanillaFactory.createBlock("heavy_mesh_block", <blockmaterial:Clay>);
@@ -45,3 +46,8 @@ heavy_mat.addMaterialTrait("duritos", "head");
 heavy_mat.addMaterialTrait("cheap", "handle");
 heavy_mat.addMaterialTrait("cheap", "extra");
 heavy_mat.register();
+
+//Heavy Mesh Ingot Cast
+val heavy_mesh_cast = VanillaFactory.createItem("heavy_mesh_cast");
+heavy_mesh_cast.creativeTab = ct_global.creativeTab;
+heavy_mesh_cast.register();
