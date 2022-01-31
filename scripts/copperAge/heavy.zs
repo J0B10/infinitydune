@@ -75,3 +75,13 @@ val castingRecipes as IItemStack[ILiquidStack] = {
 for liquid, ingot in castingRecipes {
 	Casting.addTableRecipe(ingot, <contenttweaker:heavy_mesh_cast>, liquid, 144, true, 80);
 }
+
+//Heavy Bucket
+recipes.remove(<tcomplement:materials>);
+recipes.addShaped("age1/heavy_mesh_bucket", <tcomplement:materials>, [
+	[null, null, null],
+	[<hwell:heavy_mesh>, null, <hwell:heavy_mesh>],
+	[null, <hwell:heavy_mesh>, null]
+]);
+recipes.remove(<morebuckets:rubber_bucket>);
+furnace.addRecipe(<morebuckets:rubber_bucket>, <tcomplement:materials>);
