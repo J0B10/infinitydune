@@ -17,7 +17,7 @@ furnace.addRecipe(<tconstruct:seared>, <tconstruct:soil>);
 
 // Higher yields from grout in smeltery
 Melting.removeRecipe(<liquid:stone>, <tconstruct:soil>);
-Melting.addRecipe(<liquid:stone> * 144, <tconstruct:soil>, 415);
+Melting.addRecipe(<liquid:stone> * (144 * 2), <tconstruct:soil>, 415);
 
 // Smeltery Drain
 recipes.remove(<tconstruct:smeltery_io>);
