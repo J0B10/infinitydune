@@ -52,6 +52,7 @@ DinosaurSkeleton    ?
 DesertBeacon        ?
 DesertWatchtower    ?
 SmallPyramid        ?
+SpiderPit
 ```
 
 ### Discarded
