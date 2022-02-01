@@ -2,7 +2,7 @@
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 import scripts.utils.disable;
-import scripts.stoneAge.patternChest.item as pattern_chest;
+import scripts.age0.patternChest.item as pattern_chest;
 
 //Blank Pattern
 recipes.remove(<tconstruct:pattern>);
