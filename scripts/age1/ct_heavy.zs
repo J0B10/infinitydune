@@ -1,5 +1,7 @@
 #priority 100
 #loader contenttweaker
+//Suppress bracket errors caused by <item:hwell:heavy_mesh>
+#ignoreBracketErrors
 import scripts.ct_global;
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.tconstruct.MaterialBuilder;
