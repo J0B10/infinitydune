@@ -3,3 +3,5 @@ tile.contenttweaker.heavy_mesh_block.name=Heavy Mix Block
 material.heavy_ingot.name=Heavy Material
 fluid.heavy_fluid=Heavy Fluid
 item.contenttweaker.heavy_mesh_cast.name=Ingot Cast (Heavy Mesh)
+item.contenttweaker.crystal_elf.name=Elven Crystal
+tile.contenttweaker.crystal_elf_block.name=Elven Crystal Block
