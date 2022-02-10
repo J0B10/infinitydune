@@ -11,6 +11,11 @@ disable(<chisel:chisel_iron>);
 disable(<chisel:chisel_diamond>);
 disable(<chisel:chisel_hitech>);
 
+//Colossal Chest
+disableAll(<colossalchests:chest_wall>, 1, 7);
+disableAll(<colossalchests:interface>, 1, 7);
+disableAll(<colossalchests:colossal_chest>, 1, 7);
+
 //Hearthwell
 disable(<hwell:boxer>);
 disable(<hwell:stabiliser>);
