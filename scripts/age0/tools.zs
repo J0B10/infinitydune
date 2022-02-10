@@ -65,3 +65,11 @@ recipes.addShapedMirrored("age0/crafting_table", <tconstruct:tooltables:0>, [
 recipes.remove(<minecraft:crafting_table>);
 recipes.addShapeless("age0/vanilla_crafting_table", <minecraft:crafting_table>, [<tconstruct:tooltables:0>]);
 recipes.addShapeless("age0/vanilla_crafting_table_revert", <tconstruct:tooltables:0>, [<minecraft:crafting_table>]);
+
+// Furnace
+recipes.remove(<minecraft:furnace>);
+recipes.addShaped("age0/furnace", <minecraft:furnace>, [
+    [<quark:sturdy_stone>, <quark:sturdy_stone>, <quark:sturdy_stone>], 
+    [<quark:sturdy_stone>, null, <quark:sturdy_stone>], 
+    [<quark:sturdy_stone>, <quark:sturdy_stone>, <quark:sturdy_stone>]
+]);
