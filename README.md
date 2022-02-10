@@ -15,7 +15,7 @@ Just think out of the box!
 Not for now, just use multimc! You will not regret. :smile:
 
 ## Progression
-
+![ores](https://imgur.com/0eAtybl.png)
 ### Stone Age
 * [x] Get food fom cactus & harvestcraft arid gardens  
 * [x] DeadBushes provide sticks  
@@ -24,19 +24,30 @@ Not for now, just use multimc! You will not regret. :smile:
 * [x] Get Dirt from sand (Pure Daisy) or find it (oasis)  
 * [x] Get Oak Saplings from DeadBush (Pure Daisy)  
 * [x] Pure Daisy spawns naturaly  
-* [x] Water must be discovered (caves / oasis / wells)  
+* [ ] Water must be discovered (caves / oasis / wells)  
 * [ ] Should the player be able to get a crafting table in stone age???  
       Maybe a different recipe is needed
 
-### Copper Age
-* [ ] Only Coal, Copper & Tin ores should generate (maybe also iron with more restrictions)
-* [ ] Ores can't smelt in oven
-* [ ] Grout for smeltery based on heavy mix lump
-* [ ] Heavy ingot in smeltery
+### Bronze Age
+* [X] Only Coal, Copper, Tin, Aluminium, Redstone and RockCrystal ores should generate
+* [x] Orechid allows automation / skyblock
+* [X] Ores can't smelt in oven
+* [X] Grout for smeltery based on heavy mix lump
+* [X] Heavy ingot in smeltery
+* [X] Stripped down hearthwell
+* [ ] Nether is disabled, items can be obtained by throwing through portal
+* [ ] Botania without manasteel
+* [ ] Astral Sorcery Aquamarines only midgame ( via transmutation)
+* [ ] Astral Sorcery Starmetal reqiuires iron age
+* [ ] Blood Magic?
+* [ ] Embers early game?
 
+### Iron Age
+* [X] More ores obtainable via HWell Ore puller 
+* [ ] Botania Manasteel recipes
 
 ## Modlist
-
+`wip`
 
 ## Recurrent Complex Structures
 See https://minecraft-recurrent-complex.fandom.com/wiki/Disabling_Structures for how to disable structures.
