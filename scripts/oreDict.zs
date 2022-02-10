@@ -1,5 +1,8 @@
 #priority 9
 
+//Bookshelfs
+<ore:bookshelf>.add(<minecraft:bookshelf>);
+
 //Rock Crystal ore
 <ore:oreRockCrystal>.add(<astralsorcery:blockcustomore>);
 
