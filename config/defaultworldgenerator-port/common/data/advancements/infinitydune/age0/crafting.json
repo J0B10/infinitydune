@@ -1,0 +1,23 @@
+{
+    "parent": "infinitydune:age0/wood",
+    "display": {
+        "icon": {
+            "item": "tconstruct:tooltables"
+        },
+        "title": "Let the games begin",
+        "description": "Craft a crafting table"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tconstruct:tooltables",
+                        "data": 0
+                    }
+                ]
+            }
+        }
+    }
+}

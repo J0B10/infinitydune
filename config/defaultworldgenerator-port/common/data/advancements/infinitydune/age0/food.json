@@ -1,0 +1,32 @@
+{
+    "parent": "infinitydune:root",
+    "display": {
+        "icon": {
+            "item": "harvestcraft:cactusfruititem"
+        },
+        "title": "It's edible",
+        "description": "Harvest some cactus fruits and craft some juice"
+    },
+    "criteria": {
+        "fruit": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "harvestcraft:cactusfruititem"
+                    }
+                ]
+            }
+        },
+        "juice": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "harvestcraft:cactusfruitjuiceitem"
+                    }
+                ]
+            }
+        }
+    }
+}

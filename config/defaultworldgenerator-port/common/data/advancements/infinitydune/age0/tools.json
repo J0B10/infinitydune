@@ -1,0 +1,24 @@
+{
+    "parent": "infinitydune:root",
+    "display": {
+        "icon": {
+            "item": "tconstruct:tooltables",
+            "data": 3
+        },
+        "title": "Tooling up",
+        "description": "Build a Tool Station"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tconstruct:tooltables",
+                        "data": 3
+                    }
+                ]
+            }
+        }
+    }
+}

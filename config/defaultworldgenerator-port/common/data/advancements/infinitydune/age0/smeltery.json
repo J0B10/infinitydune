@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age0/crafting",
+    "display": {
+        "icon": {
+            "item": "tconstruct:smeltery_controller"
+        },
+        "title": "Don't burn your fingers...",
+        "description": "Create a smeltery"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tconstruct:smeltery_controller"
+                    }
+                ]
+            }
+        }
+    }
+}

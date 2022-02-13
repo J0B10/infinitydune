@@ -1,0 +1,23 @@
+{
+    "parent": "infinitydune:age0/smeltery",
+    "display": {
+        "icon": {
+            "item": "embers:ingot_bronze"
+        },
+        "title": "Bronze Age",
+        "description": "Alloy bronze and cast an ingot",
+        "frame": "challenge"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "embers:ingot_bronze"
+                    }
+                ]
+            }
+        }
+    }
+}

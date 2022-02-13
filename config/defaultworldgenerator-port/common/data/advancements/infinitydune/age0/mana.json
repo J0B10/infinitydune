@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age0/crafting",
+    "display": {
+        "icon": {
+            "item": "botania:pool"
+        },
+        "title": "Mahna Mahna",
+        "description": "Caft a Mana Pool and start filling it with mana"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "botania:pool"
+                    }
+                ]
+            }
+        }
+    }
+}

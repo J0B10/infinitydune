@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:root",
+    "display": {
+        "icon": {
+            "item": "minecraft:sapling"
+        },
+        "title": "Greenification",
+        "description": "Plant a tree in the desert"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:sapling"
+                    }
+                ]
+            }
+        }
+    }
+}

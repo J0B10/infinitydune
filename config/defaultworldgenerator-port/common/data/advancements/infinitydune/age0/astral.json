@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age0/crafting",
+    "display": {
+        "icon": {
+            "item": "astralsorcery:blockaltar"
+        },
+        "title": "To the stars...",
+        "description": "Craft a Luminous Crafting Table"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "astralsorcery:blockaltar"
+                    }
+                ]
+            }
+        }
+    }
+}
