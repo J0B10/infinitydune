@@ -81,5 +81,11 @@ disable(<hwell:seed_of_the_end>);
 //Immersive Engineering
 disableAll(<immersiveengineering:ore>, 0, 5);
 
+//More Buckets
+disable(<morebuckets:quartz_bucket>);
+disable(<morebuckets:obsidian_bucket>);
+disable(<morebuckets:emerald_bucket>);
+disable(<morebuckets:diamond_bucket>);
+
 //Tinkers Construct
 disable(<tconstruct:tooltables:1>);
