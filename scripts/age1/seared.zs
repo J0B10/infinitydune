@@ -68,6 +68,8 @@ recipes.addShaped("age1/smeltery/tank", <tconstruct:seared_tank>, [
 ]);
 
 // Smeltery Controller
+recipes.remove(<minecraft:fire_charge>);
+recipes.addShapeless("age1/fire_charge", <minecraft:fire_charge>, [<ore:gunpowder>, <minecraft:flint>, <minecraft:coal:*>]);
 recipes.remove(<tconstruct:smeltery_controller>);
 recipes.addShaped("age1/smeltery/controller", <tconstruct:smeltery_controller>, [
 	[<ore:blockSeared>, <ore:blockSeared>, <ore:blockSeared>], 
