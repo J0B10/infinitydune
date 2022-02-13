@@ -68,6 +68,12 @@ recipes.addShapeless("age0/vanilla_crafting_table_revert", <tconstruct:tooltable
 
 // Furnace
 recipes.remove(<minecraft:furnace>);
+recipes.remove(<quark:sturdy_stone>);
+recipes.addShaped("age0/sturdy_stone", <quark:sturdy_stone> * 4, [
+	[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>], 
+	[<ore:cobblestone>, null, <ore:cobblestone>], 
+	[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
+]);
 recipes.addShaped("age0/furnace", <minecraft:furnace>, [
     [<quark:sturdy_stone>, <quark:sturdy_stone>, <quark:sturdy_stone>], 
     [<quark:sturdy_stone>, null, <quark:sturdy_stone>], 
