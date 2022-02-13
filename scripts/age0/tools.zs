@@ -31,28 +31,36 @@ recipes.remove(<tconstruct:tooltables:4>);
 recipes.addShapeless("age0/pattern_chest", pattern_chest, [tool_rod_pattern, part_builder]);
 
 //Tool Station
-disable(<tconstruct:tooltables:3>);
-val tool_station = <tconstruct:tooltables:3>.withTag({
-    textureBlock: {
-        id: "minecraft:sandstone", 
-        Count: 1 as byte, 
-        Damage: 2 as short
-    }
-});
-JEI.addItem(tool_station);
-recipes.addShapedMirrored("age0/tool_station", tool_station, [
+recipes.remove(<tconstruct:tooltables:3>);
+recipes.addShapedMirrored("age0/tool_station", <tconstruct:tooltables:3>, [
     [<tconstruct:pattern:0>, <ore:partPickHead>], 
-    [<minecraft:sandstone:2>, null]
-]);
+    [<ore:sandstone>.marked("sandstone"), null]
+], function(out,items,cinf) {
+    val block = items.sandstone;
+    return out.withTag({
+        textureBlock: {
+            id: block.definition.id, 
+            Count: 1 as byte, 
+            Damage: block.damage as short
+        }
+    });
+}, null);
 
 //Armor Station
-disable(<conarm:armorstation>);
-val armor_station = <conarm:armorstation>.withTag(tool_station.tag);
-JEI.addItem(armor_station);
-recipes.addShapedMirrored("age0/armor_station", armor_station, [
+recipes.remove(<conarm:armorstation>);
+recipes.addShapedMirrored("age0/armor_station", <conarm:armorstation>, [
     [<tconstruct:pattern:0>, <conarm:chest_core:*>], 
-    [<minecraft:sandstone:2>, null]
-]);
+    [<ore:sandstone>.marked("sandstone"), null]
+], function(out,items,cinf) {
+    val block = items.sandstone;
+    return out.withTag({
+        textureBlock: {
+            id: block.definition.id,
+            Count: 1 as byte,  
+            Damage: block.damage as short
+        }
+    });
+}, null);
 
 // Crafting "Table"
 recipes.remove(<tconstruct:tooltables:0>);
