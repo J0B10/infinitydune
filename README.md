@@ -47,7 +47,62 @@ Not for now, just use multimc! You will not regret. :smile:
 * [ ] Botania Manasteel recipes
 
 ## Modlist
-`wip`
+```
+AppleSkin
+Astral Sorcery
+B.A.S.E
+Baubles
+BetterFps
+Botania
+Chameleon
+Construct's Armory
+ContentTweaker
+CraftTweaker
+Cucumber Library
+Default World Generator (port)
+Ding
+Embers Rekindled
+Extended Crafting
+Fast Leaf Decay
+Hearth Well
+IvToolkit
+JAOPCA
+Just Enough Items (JEI)
+Just Enough HarvestCraft (JEHC)
+Mantle
+ModTweaker
+More Buckets
+More Overlays
+MoreTweaker
+Mouse Tweaks
+MTLib
+Pam's HarvestCraft
+Patchouli
+ReAuth
+Recurrent Complex
+Storage Drawers
+Storage Drawers KAPPA Addon
+Tinkers Construct
+The One Probe
+Tinker's JEI
+Tinkers' Tool Leveling
+WrapUp
+Botania: Garden of Glass
+Immersive Engineering
+Immersive Petroleum
+Just Enough Petroleum
+Engineer's Doors
+Immersive Technology
+Just Enough Resources (JER)
+ConnectedTexturesMod
+Chisel
+Tinkers' Complement
+Quark Oddities
+Quark
+AutoRegLib
+Cyclops Core
+Colossal Chests
+```
 
 ## Recurrent Complex Structures
 See https://minecraft-recurrent-complex.fandom.com/wiki/Disabling_Structures for how to disable structures.
