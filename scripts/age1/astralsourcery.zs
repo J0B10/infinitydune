@@ -5,6 +5,11 @@ import crafttweaker.item.IIngredient;
 
 static itemCrystal as IIngredient = <astralsorcery:itemrockcrystalsimple> | <astralsorcery:itemtunedrockcrystal> | <astralsorcery:itemcelestialcrystal> | <astralsorcery:itemtunedcelestialcrystal>;
 
+//////////////////////////////////////////////
+//                Discovery                 //
+//////////////////////////////////////////////
+
+
 //Hearthwell shard as cheap supply for liquid starlight
 Lightwell.addLiquefaction(<hwell:shard_ca>, <liquid:astralsorcery.liquidstarlight>, 0.3, 14, 0xFFFFFF);
 
@@ -60,7 +65,7 @@ Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/illuminationp
 //Fosic Resonator
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator");
 Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/skyresonator", <astralsorcery:itemskyresonator>, 100, 100, [
-    null, <hwell:shard_o>, null, 
+    null, <botania:petal:11>, null, 
     <ore:stoneMarble>, <liquid:astralsorcery.liquidstarlight>, <ore:stoneMarble>, 
     null, <hwell:crystal_bowl>, null
 ]);
@@ -79,4 +84,26 @@ Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/lightwell", <
     <astralsorcery:blockmarble:6>, null, <astralsorcery:blockmarble:6>, 
     <hwell:shard_o>, itemCrystal, <hwell:shard_o>, 
     <ore:stoneMarble>, <astralsorcery:blockmarble:6>, <ore:stoneMarble>
+]);
+
+//////////////////////////////////////////////
+//                Attunement                //
+//////////////////////////////////////////////
+
+//Telescope
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/telescope");
+Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/telescope", <astralsorcery:blockmachine>, 1400, 300, [
+	null, <astralsorcery:itemhandtelescope>, null, 
+	<ore:ingotBronze>, <astralsorcery:blockinfusedwood:1>, <ore:ingotBronze>, 
+	<ore:stickWood>, <ore:stickWood>, <ore:stickWood>,
+    null, null, null, null
+]);
+
+//Linking tool
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking");
+Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking", <astralsorcery:itemlinkingtool>, 1000, 300, [
+	<ore:stickWood>, <botania:petal:11>, null,
+	<ore:stickWood>, <astralsorcery:itemrockcrystalsimple>, <hwell:shard_o>, 
+	<astralsorcery:blockinfusedwood:1>, <ore:stickWood>, <ore:stickWood>,
+	null, null, <astralsorcery:blockinfusedwood:1>, null,
 ]);
