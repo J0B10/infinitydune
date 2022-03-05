@@ -5,6 +5,11 @@ for i in 0 to 15 {
     <ore:blockCarpet>.add(<minecraft:carpet>.withDamage(i));
 }
 
+<ore:soulGemPetty>.add(<bloodmagic:soul_gem:0>);
+
+//Polished Stone
+<ore:stonePolished>.add(<chisel:stonebrick2:9>);
+
 //Bookshelfs
 <ore:bookshelf>.add(<minecraft:bookshelf>);
 
