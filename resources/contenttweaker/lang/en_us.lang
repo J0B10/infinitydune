@@ -7,3 +7,4 @@ item.contenttweaker.crystal_elf.name=Elven Crystal
 tile.contenttweaker.crystal_elf_block.name=Elven Crystal Block
 modifier.demonic.name=Demonic
 modifier.demonic.desc=§oDevours souls!§r\nAny Mobs hit will drop Demonic Will on death! 
+tile.contenttweaker.raw_soulsteel_block.name=Raw Soulsteel Block
