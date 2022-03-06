@@ -2,6 +2,7 @@
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Lightwell;
 import crafttweaker.item.IIngredient;
+import mods.astralsorcery.LightTransmutation;
 
 static itemCrystal as IIngredient = <astralsorcery:itemrockcrystalsimple> | <astralsorcery:itemtunedrockcrystal> | <astralsorcery:itemcelestialcrystal> | <astralsorcery:itemtunedcelestialcrystal>;
 
@@ -107,3 +108,7 @@ Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_linking
 	<astralsorcery:blockinfusedwood:1>, <ore:stickWood>, <ore:stickWood>,
 	null, null, <astralsorcery:blockinfusedwood:1>, null,
 ]);
+
+//Stralight transmutation of Sand to Aquamarine
+LightTransmutation.removeTransmutation(<minecraft:clay>, false);
+LightTransmutation.addTransmutation(<minecraft:sand>, <astralsorcery:blockcustomsandore>, 100);
