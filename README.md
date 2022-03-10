@@ -24,8 +24,8 @@ Not for now, just use multimc! You will not regret. :smile:
 * [x] Get Dirt from sand (Pure Daisy) or find it (oasis)  
 * [x] Get Oak Saplings from DeadBush (Pure Daisy)  
 * [x] Pure Daisy spawns naturaly  
-* [ ] Water must be discovered (caves / oasis / wells)  
-* [ ] Should the player be able to get a crafting table in stone age???  
+* [x] Water must be discovered (caves / oasis / wells)  
+* [x] Should the player be able to get a crafting table in stone age???  
       Maybe a different recipe is needed
 
 ### Bronze Age
@@ -35,10 +35,10 @@ Not for now, just use multimc! You will not regret. :smile:
 * [X] Grout for smeltery based on heavy mix lump
 * [X] Heavy ingot in smeltery
 * [X] Stripped down hearthwell
-* [ ] Nether is disabled, items can be obtained by throwing through portal
-* [ ] Botania without manasteel
-* [ ] Astral Sorcery Aquamarines only midgame ( via transmutation)
-* [ ] Astral Sorcery Starmetal reqiuires iron age
+* [X] Nether is disabled, items can be obtained by throwing through portal
+* [X] Botania without manasteel
+* [X] Astral Sorcery Aquamarines only midgame ( via transmutation)
+* [X] Astral Sorcery Starmetal reqiuires iron age
 * [ ] Blood Magic?
 * [ ] Embers early game?
 
