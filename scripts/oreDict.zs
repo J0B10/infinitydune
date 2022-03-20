@@ -13,6 +13,16 @@ for i in 0 to 15 {
 //Bookshelfs
 <ore:bookshelf>.add(<minecraft:bookshelf>);
 
+//Rock Crystal
+<ore:rockCrystal>.add(<astralsorcery:itemrockcrystalsimple>);
+<ore:rockCrystal>.add(<astralsorcery:itemtunedrockcrystal>);
+<ore:celestialCrystal>.add(<astralsorcery:itemcelestialcrystal>);
+<ore:celestialCrystal>.add(<astralsorcery:itemtunedcelestialcrystal>);
+<ore:tunedcrystal>.add(<astralsorcery:itemtunedrockcrystal>);
+<ore:tunedcrystal>.add(<astralsorcery:itemtunedcelestialcrystal>);
+<ore:crystal>.addAll(<ore:rockCrystal>);
+<ore:crystal>.addAll(<ore:celestialCrystal>);
+
 //Rock Crystal ore
 <ore:oreRockCrystal>.add(<astralsorcery:blockcustomore>);
 

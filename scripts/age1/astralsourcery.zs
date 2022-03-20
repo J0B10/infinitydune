@@ -4,8 +4,6 @@ import mods.astralsorcery.Lightwell;
 import crafttweaker.item.IIngredient;
 import mods.astralsorcery.LightTransmutation;
 
-static itemCrystal as IIngredient = <astralsorcery:itemrockcrystalsimple> | <astralsorcery:itemtunedrockcrystal> | <astralsorcery:itemcelestialcrystal> | <astralsorcery:itemtunedcelestialcrystal>;
-
 //////////////////////////////////////////////
 //                Discovery                 //
 //////////////////////////////////////////////
@@ -83,7 +81,7 @@ Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/attunementrel
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
 Altar.addDiscoveryAltarRecipe("astralsorcery:shaped/internal/altar/lightwell", <astralsorcery:blockwell>, 200, 100, [
     <astralsorcery:blockmarble:6>, null, <astralsorcery:blockmarble:6>, 
-    <hwell:shard_o>, itemCrystal, <hwell:shard_o>, 
+    <hwell:shard_o>, <ore:crystal>, <hwell:shard_o>, 
     <ore:stoneMarble>, <astralsorcery:blockmarble:6>, <ore:stoneMarble>
 ]);
 
@@ -117,7 +115,7 @@ LightTransmutation.addTransmutation(<minecraft:sand>, <astralsorcery:blockcustom
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/gateway");
 Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/gateway", <astralsorcery:blockcelestialgateway>, 1400, 300, [
     <astralsorcery:blockblackmarble>, <ore:runeAirB>, <astralsorcery:blockblackmarble>,
-    <astralsorcery:itemcraftingcomponent:3>, itemCrystal, <astralsorcery:itemcraftingcomponent:3>,
+    <astralsorcery:itemcraftingcomponent:3>, <ore:crystal>, <astralsorcery:itemcraftingcomponent:3>,
     <ore:ingotBronze>, <ore:blockMarble>, <ore:ingotBronze>,
     <astralsorcery:itemusabledust>, <astralsorcery:itemusabledust>, <ore:gemAquamarine>, <ore:gemAquamarine>
 ]);
