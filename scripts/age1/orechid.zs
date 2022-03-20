@@ -1,5 +1,15 @@
 #priority 1
 import mods.botania.Orechid;
+import mods.botania.Apothecary;
+
+//Modified Orechid Recipe
+
+Apothecary.removeRecipe("orechid");
+Apothecary.addRecipe(<botania:specialflower>.withTag({type: "orechid"}), [
+    <ore:petalGray>, <ore:petalGray>, <ore:petalYellow>, <ore:petalGreen>, <ore:petalRed>, 
+    <ore:runeFireB>, <ore:runeEarthB>, <ore:redstoneRoot>, <ore:manaPearl>
+]);
+
 
 //Remove all ores
 for ore in <ore:ore*> {
