@@ -7,6 +7,20 @@ for i in 0 to 15 {
 
 <ore:soulGemPetty>.add(<bloodmagic:soul_gem:0>);
 
+//Empty BBuckets
+<ore:listAllEmptyBucket>.add(<minecraft:bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:aluminum_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:copper_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:tin_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:rubber_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:silver_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:bronze_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:steel_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:ardite_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:cobalt_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:manyullyn_bucket>);
+<ore:listAllEmptyBucket>.add(<morebuckets:golden_bucket>);
+
 //Polished Stone
 <ore:stonePolished>.add(<chisel:stonebrick2:9>);
 
