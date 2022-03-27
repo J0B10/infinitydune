@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age1/bloodAltar",
+    "display": {
+        "icon": {
+            "item": "bloodmagic:incense_altar"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "bloodmagic:incense_altar"
+                    }
+                ]
+            }
+        }
+    }
+}

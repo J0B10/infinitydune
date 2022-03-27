@@ -1,0 +1,18 @@
+{
+    "parent": "infinitydune:age0/mana",
+    "display": {
+        "icon": {
+            "item": "botania:cocoon"
+        },
+        "title": "Suprise motherfucker!",
+        "description": "Craft a Cocoon of Caprice and place it in the world. I wonder what will hatch!"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "botania:cocoon"
+            }
+        }
+    }
+}

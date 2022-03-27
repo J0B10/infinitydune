@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:bronze",
+    "display": {
+        "icon": {
+            "item": "bloodmagic:altar"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "bloodmagic:altar"
+                    }
+                ]
+            }
+        }
+    }
+}

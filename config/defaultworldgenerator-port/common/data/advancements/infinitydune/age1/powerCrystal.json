@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age1/mystRod",
+    "display": {
+        "icon": {
+            "item": "hwell:power_crystal"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:power_crystal"
+                    }
+                ]
+            }
+        }
+    }
+}

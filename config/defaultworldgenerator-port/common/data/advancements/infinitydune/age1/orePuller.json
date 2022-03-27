@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:age1/powerCrystal",
+    "display": {
+        "icon": {
+            "item": "hwell:puller"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:puller"
+                    }
+                ]
+            }
+        }
+    }
+}

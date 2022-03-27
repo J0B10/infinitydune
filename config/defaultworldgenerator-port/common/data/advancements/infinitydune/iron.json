@@ -1,0 +1,23 @@
+{
+    "parent": "infinitydune:age1/orePuller",
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_ingot"
+        },
+        "title": "Iron Age",
+        "description": "Pull some iron ore out of the ground and melt it",
+        "frame": "challenge"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_ingot"
+                    }
+                ]
+            }
+        }
+    }
+}

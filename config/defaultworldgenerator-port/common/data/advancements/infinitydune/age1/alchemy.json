@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:bronze",
+    "display": {
+        "icon": {
+            "item": "botania:alchemycatalyst"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "botania:alchemycatalyst"
+                    }
+                ]
+            }
+        }
+    }
+}

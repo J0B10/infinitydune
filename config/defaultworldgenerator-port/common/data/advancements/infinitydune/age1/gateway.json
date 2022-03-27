@@ -1,0 +1,22 @@
+{
+    "parent": "infinitydune:bronze",
+    "display": {
+        "icon": {
+            "item": "astralsorcery:blockcelestialgateway"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "astralsorcery:blockcelestialgateway"
+                    }
+                ]
+            }
+        }
+    }
+}

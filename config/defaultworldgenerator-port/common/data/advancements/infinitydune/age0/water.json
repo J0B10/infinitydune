@@ -1,0 +1,39 @@
+{
+    "parent": "infinitydune:age0/crafting",
+    "display": {
+        "icon": {
+            "item": "morebuckets:rubber_bucket",
+            "nbt": "{\"FluidName\": \"water\", \"Amount\": 1000}"
+        },
+        "title": "todo",
+        "description": "todo"
+    },
+    "criteria": {
+        "morebuckets": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{\"FluidName\": \"water\", \"Amount\": 1000}"
+                    }
+                ]
+            }
+        }, 
+        "vanilla": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:water_bucket"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "morebuckets",
+            "vanilla"
+        ]
+    ]
+}

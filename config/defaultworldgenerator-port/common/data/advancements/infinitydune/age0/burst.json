@@ -1,0 +1,71 @@
+{
+    "parent": "infinitydune:age0/mana",
+    "display": {
+        "icon": {
+            "item": "hwell:burst_seed_dirt"
+        },
+        "title": "Bursting with resources",
+        "description": "Create some burst seeds from mana powder to multiply your resources"
+    },
+    "criteria": {
+        "dirt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:burst_seed_dirt"
+                    }
+                ]
+            }
+        },
+        "stone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:burst_seed_stone"
+                    }
+                ]
+            }
+        },
+        "sand": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:burst_seed_sand"
+                    }
+                ]
+            }
+        },
+        "gravel": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:burst_seed_gravel"
+                    }
+                ]
+            }
+        },
+        "cobblestone": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "hwell:burst_seed_cobblestone"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "dirt", 
+            "stone", 
+            "sand", 
+            "gravel", 
+            "cobblestone"
+        ]
+    ]
+}
