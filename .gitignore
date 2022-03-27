@@ -20,6 +20,9 @@
 # except config files
 !config
 !config/**
+!journeymap
+!journeymap/config
+!journeymap/config/**
 
 # but explitly ignore jei & splash
 config/jei
