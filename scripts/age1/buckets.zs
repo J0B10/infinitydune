@@ -2,6 +2,7 @@
 import mods.immersiveengineering.Blueprint;
 import mods.immersiveengineering.MetalPress;
 import mods.tconstruct.Casting;
+import mods.bloodmagic.BloodAltar;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
@@ -9,6 +10,11 @@ import crafttweaker.liquid.ILiquidStack;
 Blueprint.addRecipe("molds", <contenttweaker:mold_bucket>, [
     <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>, <immersiveengineering:tool:1>
 ]);
+
+//Cast crafting recipes
+Casting.addTableRecipe(<tcomplement:cast_clay>, <ore:listAllEmptyBucket>, <liquid:clay>, 288, true, 80);
+Casting.addTableRecipe(<tcomplement:cast>, <ore:listAllEmptyBucket>, <liquid:gold>, 288, true, 60);
+Casting.addTableRecipe(<tcomplement:cast>, <ore:listAllEmptyBucket>, <liquid:alubrass>, 144, true, 40);
 
 val materials = {
     <minecraft:bucket> : <liquid:iron>,
@@ -38,4 +44,23 @@ for bucket in materials.keys {
     } else {
         MetalPress.addRecipe(bucket, <ore:ingotHeavy>, <contenttweaker:mold_bucket>, 2000, 3);
     }
+}
+
+val amount = {
+    <morebuckets:aluminum_bucket> :1,
+    <morebuckets:copper_bucket> : 1,
+    <morebuckets:tin_bucket> : 1,
+    <morebuckets:rubber_bucket> : 1,
+    <morebuckets:silver_bucket> : 3,
+    <morebuckets:golden_bucket> : 4, 
+    <morebuckets:bronze_bucket> : 4,
+    <morebuckets:steel_bucket> : 6,
+    <morebuckets:ardite_bucket> : 9,
+    <morebuckets:cobalt_bucket> : 9,
+    <morebuckets:manyullyn_bucket> : 16,
+} as int[IItemStack];
+
+for bucket in amount.keys {
+    val mb = (amount[bucket] * 1000);
+    BloodAltar.addRecipe(bucket.withTag({FluidName: "lifeessence", Amount: mb}), bucket.withEmptyTag(), 0, mb, 5, 0);
 }
