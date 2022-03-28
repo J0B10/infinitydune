@@ -49,6 +49,11 @@ for i in 0 to 15 {
 <ore:embOreNickel>.add(<embers:ore_nickel>);
 <ore:embOreTin>.add(<embers:ore_tin>);
 
+//Mystic Flowers
+for i in 0 to 15 {
+    <ore:mysticFlower>.add(<botania:flower>.withDamage(i));
+}
+
 //Sprouts
 for i in 0 to 3 {
     <ore:caveRootSprout>.add(<quark:root_flower>.withDamage(i));
