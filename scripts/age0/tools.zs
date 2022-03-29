@@ -3,6 +3,7 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 import scripts.utils.disable;
 import scripts.age0.patternChest.item as pattern_chest;
+import scripts.age0.castChest.item as cast_chest;
 
 //Blank Pattern
 recipes.remove(<tconstruct:pattern>);
@@ -29,6 +30,11 @@ JEI.addItem(part_builder);
 //Pattern chest
 recipes.remove(<tconstruct:tooltables:4>);
 recipes.addShapeless("age0/pattern_chest", pattern_chest, [tool_rod_pattern, part_builder]);
+recipes.addShaped("age0/cast_chest", cast_chest, [
+    [<ore:blockAlubrass>, <tconstruct:cast_custom:0>, <ore:blockAlubrass>], 
+    [<tconstruct:cast_custom:1>, <ore:chest>, <tconstruct:cast>.withTag({PartType: "tconstruct:pick_head"})], 
+    [<ore:blockAlubrass>, <tconstruct:cast:0>, <ore:blockAlubrass>]
+]);
 
 //Tool Station
 recipes.remove(<tconstruct:tooltables:3>);
@@ -78,9 +84,9 @@ recipes.addShapeless("age0/vanilla_crafting_table_revert", <tconstruct:tooltable
 recipes.remove(<minecraft:furnace>);
 recipes.remove(<quark:sturdy_stone>);
 recipes.addShaped("age0/sturdy_stone", <quark:sturdy_stone> * 4, [
-	[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>], 
-	[<ore:cobblestone>, null, <ore:cobblestone>], 
-	[<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
+    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>], 
+    [<ore:cobblestone>, null, <ore:cobblestone>], 
+    [<ore:cobblestone>, <ore:cobblestone>, <ore:cobblestone>]
 ]);
 recipes.addShaped("age0/furnace", <minecraft:furnace>, [
     [<quark:sturdy_stone>, <quark:sturdy_stone>, <quark:sturdy_stone>], 
