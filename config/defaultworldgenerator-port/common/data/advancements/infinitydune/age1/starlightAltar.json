@@ -1,8 +1,9 @@
 {
-    "parent": "infinitydune:age1/starlightAltar",
+    "parent": "infinitydune:bronze",
     "display": {
         "icon": {
-            "item": "astralsorcery:blockcelestialgateway"
+            "item": "astralsorcery:blockaltar",
+            "data": 1
         },
         "title": "todo",
         "description": "todo"
@@ -13,7 +14,8 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "astralsorcery:blockcelestialgateway"
+                        "item": "astralsorcery:blockaltar",
+                        "data": 1
                     }
                 ]
             }
