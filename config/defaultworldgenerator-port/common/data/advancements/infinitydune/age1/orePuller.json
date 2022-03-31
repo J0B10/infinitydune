@@ -4,8 +4,8 @@
         "icon": {
             "item": "hwell:puller"
         },
-        "title": "todo",
-        "description": "todo"
+        "title": "Pulling hard!",
+        "description": "Craft a Ore Puller to obtain more ores."
     },
     "criteria": {
         "item": {
