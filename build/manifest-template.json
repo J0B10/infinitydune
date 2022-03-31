@@ -1,7 +1,7 @@
 {
     "name": "infinitydune",
-    "version": "v0.1.0",
-    "author": "ung43froren",
+    "version": "build-tools-v1.1",
+    "author": "ung3froren",
     "manifestType": "minecraftModpack",
     "manifestVersion": 1,
     "minecraft": {
