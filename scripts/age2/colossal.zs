@@ -3,18 +3,18 @@ import mods.extendedcrafting.TableCrafting;
 
 //Tiny Chest
 recipes.remove(<colossalchests:uncolossal_chest>);
-recipes.addShapeless("age1/uncolossal", <colossalchests:uncolossal_chest> * 8, [<minecraft:chest>]);
+recipes.addShapeless("age2/uncolossal", <colossalchests:uncolossal_chest> * 8, [<minecraft:chest>]);
 
 //Colossal Chest Interface
 recipes.remove(<colossalchests:interface>);
-recipes.addShaped("age1/colossal_interface", <colossalchests:interface>, [
+recipes.addShaped("age2/colossal_interface", <colossalchests:interface>, [
     [<tconstruct:wooden_hopper>], 
     [<colossalchests:chest_wall>], 
 ]);
 
 //Colossal Chest Wall
 recipes.remove(<colossalchests:chest_wall>);
-recipes.addShaped("age1/colossal_wall", <colossalchests:chest_wall>, [
+recipes.addShaped("age2/colossal_wall", <colossalchests:chest_wall>, [
 	[<astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood>], 
 	[<astralsorcery:blockinfusedwood>, null, <astralsorcery:blockinfusedwood>], 
 	[<astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood>, <astralsorcery:blockinfusedwood>]

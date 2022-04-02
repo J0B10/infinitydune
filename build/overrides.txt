@@ -3,3 +3,4 @@ patchouli_books/
 resources/
 scripts/
 structures/
+journeymap/config/

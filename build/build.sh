@@ -32,8 +32,8 @@ rm -rf out
 # copy overrides
 
 echo "Copy overrides:"
-mkdir -p out/overrides
 while read f; do
+  mkdir -p "out/overrides/$f"
   cp -r "../$f" "out/overrides/$f"
   echo "    copied $f"
 done <overrides.txt

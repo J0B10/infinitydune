@@ -5,7 +5,6 @@ for i in 0 to 15 {
     <ore:blockCarpet>.add(<minecraft:carpet>.withDamage(i));
 }
 
-<ore:soulGemPetty>.add(<bloodmagic:soul_gem:0>);
 
 //Empty BBuckets
 <ore:listAllEmptyBucket>.add(<minecraft:bucket>);

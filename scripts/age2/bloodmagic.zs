@@ -2,14 +2,14 @@
 import mods.bloodmagic.BloodAltar;
 import crafttweaker.item.IItemStack;
 import mods.bloodmagic.TartaricForge;
-import scripts.age1.bloodOrbs.orbTier;
+import scripts.age2.bloodOrbs.orbTier;
 
 //Document TC Modifier
 <bloodmagic:monster_soul:0>.addTooltip(format.gray("Demonic Modifier"));
 
 //Rudimentary snare
 recipes.remove(<bloodmagic:soul_snare>);
-recipes.addShaped("age1/soul_snare", <bloodmagic:soul_snare> * 8, [
+recipes.addShaped("age2/soul_snare", <bloodmagic:soul_snare> * 8, [
     [null, <ore:manaString>, <ore:manaString>], 
     [null, <hwell:shard_ca>, <ore:manaString>], 
     [<ore:manaString>, null, null]
@@ -17,7 +17,7 @@ recipes.addShaped("age1/soul_snare", <bloodmagic:soul_snare> * 8, [
 
 //Blood Altar
 recipes.remove(<bloodmagic:altar>);
-recipes.addShaped("age1/blood_altar", <bloodmagic:altar>, [
+recipes.addShaped("age2/blood_altar", <bloodmagic:altar>, [
     [<ore:slimeballBlood>, <ore:blockHearthWellNetherCrystal>, <ore:slimeballBlood>], 
     [<quark:sturdy_stone>, <astralsorcery:blockaltar:1>, <quark:sturdy_stone>], 
     [<quark:sturdy_stone>, <bloodmagic:monster_soul>, <quark:sturdy_stone>]
@@ -25,7 +25,7 @@ recipes.addShaped("age1/blood_altar", <bloodmagic:altar>, [
 
 //Hellfire Forge
 recipes.remove(<bloodmagic:soul_forge>);
-recipes.addShaped("age1/soul_forge", <bloodmagic:soul_forge>, [
+recipes.addShaped("age2/soul_forge", <bloodmagic:soul_forge>, [
     [<ore:powderMana>, null, <ore:powderMana>], 
     [<quark:sturdy_stone>, <ore:blockTin>, <quark:sturdy_stone>], 
     [<quark:sturdy_stone>, <ore:powderMana>, <quark:sturdy_stone>]
@@ -40,7 +40,7 @@ BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:apprentice
 BloodAltar.addRecipe(<bloodmagic:blood_orb>.withTag({orb: "bloodmagic:magician"}), <hwell:crystal_nether_block>, 2, 25000, 20, 20);
 
 //Sacrifical Dagger
-recipes.addShaped("age1/sacrificial_dagger", <bloodmagic:sacrificial_dagger>, [
+recipes.addShaped("age2/sacrificial_dagger", <bloodmagic:sacrificial_dagger>, [
     [null, null, <tconstruct:knife_blade>.withTag({Material: "bronze"})], 
     [null, <tconstruct:wide_guard>.withTag({Material: "obsidian"}), null], 
     [<tconstruct:tool_rod>.withTag({Material: "heavy_ingot"}), null, null]
@@ -52,7 +52,7 @@ BloodAltar.addRecipe(<bloodmagic:dagger_of_sacrifice>, <tconstruct:knife_blade>.
 
 //Incense Altar
 recipes.remove(<bloodmagic:incense_altar>);
-recipes.addShaped("age1/incense_altar", <bloodmagic:incense_altar>, [
+recipes.addShaped("age2/incense_altar", <bloodmagic:incense_altar>, [
     [<ore:ingotAlubrass>, null, <ore:ingotAlubrass>], 
     [<ore:blockAlubrass>, <ore:runeFireB>, <ore:blockAlubrass>], 
     [<bloodmagic:blood_rune>, orbTier(1), <bloodmagic:blood_rune>]
@@ -69,7 +69,7 @@ TartaricForge.addRecipe(<bloodmagic:soul_gem:2>, [<bloodmagic:soul_gem:1>, <bloo
 
 //Blood letters pack
 recipes.remove(<bloodmagic:pack_self_sacrifice>);
-recipes.addShaped("age1/pack_self_sacrifice", <bloodmagic:pack_self_sacrifice>, [
+recipes.addShaped("age2/pack_self_sacrifice", <bloodmagic:pack_self_sacrifice>, [
     [null, <tconstruct:knife_blade>.withTag({Material: "bronze"}), null], 
     [<ore:bVial>, <conarm:chestplate>, <ore:manaString>], 
     [null, <bloodmagic:slate:0>, null]
@@ -77,7 +77,7 @@ recipes.addShaped("age1/pack_self_sacrifice", <bloodmagic:pack_self_sacrifice>, 
 
 //Coat of Arms
 recipes.remove(<bloodmagic:pack_sacrifice>);
-recipes.addShaped("age1/pack_sacrifice", <bloodmagic:pack_sacrifice>, [
+recipes.addShaped("age2/pack_sacrifice", <bloodmagic:pack_sacrifice>, [
     [null, <tconstruct:large_plate>.withTag({Material: "obsidian"}), null], 
     [<ore:bVial>, <conarm:chestplate>, <ore:manaString>], 
     [null, <bloodmagic:slate:1>, null]
