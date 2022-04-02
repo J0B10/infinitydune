@@ -1,5 +1,5 @@
 ---
-name: "pre-release"
+name: "Build Tools Release"
 
 on:
   push:
@@ -7,23 +7,28 @@ on:
       - "build-tools*"
 
 jobs:
-  pre-release:
-    name: "Pre Release"
+  release:
+    name: "Release"
     runs-on: "ubuntu-latest"
 
     steps:
       - uses: actions/checkout@v2
-      
+      - name: "Get Tag"
+        id: tag
+        run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+
       - name: "Build"
         working-directory: build
         run: ./build.sh
       
       - name: "Zip"
         working-directory: build/out
-        run: "zip -r ../infinitydune-build-tools-b${{ github.run_number }}.zip ."
+        run: "zip -r ../infinitydune-${{ steps.tag.outputs.tag }}.zip ."
 
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          title: "${{ steps.tag.outputs.tag }}"
+          automatic_release_tag: "${{ steps.tag.outputs.tag }}"
           prerelease: false
-          files: "build/infinitydune-build-tools-b${{ github.run_number }}.zip"
+          files: "build/infinitydune-${{ steps.tag.outputs.tag }}.zip"

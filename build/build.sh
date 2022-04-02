@@ -39,6 +39,7 @@ while read f; do
 done <overrides.txt
 
 cp "../LICENSE" "out"
+cp "../README.md" "out"
 
 # generate manifest
 
