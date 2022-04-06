@@ -43,7 +43,14 @@ cp "../LICENSE" "out"
 # generate manifest
 
 echo "Generating manifest:"
-python3 generate.py
+# run generate.py and pipe linebreak to stdin to close on exit
+echo -e "\n" | python3 generate.py 
+# error handling
+exitCode=$?
+if [ $exitCode -ne 0 ]; then
+    >&2 echo "Error while running modpack-manifest-generator. Exit code: $exitCode"
+    exit $exitCode
+fi
 
 echo "Copy manifest"
 mv manifest.json out
