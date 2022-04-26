@@ -3,6 +3,8 @@ import mods.bloodmagic.BloodAltar;
 import crafttweaker.item.IItemStack;
 import mods.bloodmagic.TartaricForge;
 import scripts.age2.bloodOrbs.orbTier;
+import mods.extendedcrafting.TableCrafting;
+import mods.bloodmagic.AlchemyTable;
 
 //Document TC Modifier
 <bloodmagic:monster_soul:0>.addTooltip(format.gray("Demonic Modifier"));
@@ -82,3 +84,39 @@ recipes.addShaped("age2/pack_sacrifice", <bloodmagic:pack_sacrifice>, [
     [<ore:bVial>, <conarm:chestplate>, <ore:manaString>], 
     [null, <bloodmagic:slate:1>, null]
 ]);
+
+//Alchemy Jar
+recipes.addShaped("age2/alchemy_jar", <contenttweaker:alchemy_jar>, [
+    [<botania:managlass>, <ore:logWood>, <botania:managlass>], 
+    [<botania:managlass>, null, <botania:managlass>], 
+    [<botania:managlass>, <botania:managlass>, <botania:managlass>]
+]);
+
+//Alchemy Table
+recipes.remove(<bloodmagic:alchemy_table>);
+TableCrafting.addShaped(0, <bloodmagic:alchemy_table>, [
+    [null, null, null, null, null], 
+    [<contenttweaker:alchemy_jar>, <ore:bVial>, null, null, null], 
+    [<minecraft:carpet:14>, <bloodmagic:slate:1>, <minecraft:carpet:14>, <minecraft:carpet:14>, <minecraft:carpet:14>], 
+    [<bloodmagic:blood_rune>, <bloodmagic:blood_rune>, <botania:alchemycatalyst>, <bloodmagic:blood_rune>, <bloodmagic:blood_rune>], 
+    [null, <bloodmagic:blood_rune>, null, <bloodmagic:blood_rune>, null]
+]);
+
+//Plant Oil
+AlchemyTable.removeRecipe([<minecraft:carrot>,<minecraft:carrot>,<minecraft:carrot>,<minecraft:dye:15>]);
+AlchemyTable.removeRecipe([<minecraft:beetroot>,<minecraft:beetroot>, <minecraft:beetroot>,<minecraft:dye:15>]);
+AlchemyTable.removeRecipe([<minecraft:wheat>,<minecraft:wheat>,<minecraft:dye:15>]);
+AlchemyTable.removeRecipe([<minecraft:potato>,<minecraft:potato>,<minecraft:dye:15>]);
+for item in <ore:listAllseed>.items {
+    AlchemyTable.addRecipe(<bloodmagic:component:22>, [item, item, item, <minecraft:dye:15>, <contenttweaker:alchemy_jar>], 100, 100, 1);
+}
+
+//Basic Cutting Fluid
+AlchemyTable.removeRecipe([
+    <bloodmagic:component:21>,<minecraft:gunpowder>,<minecraft:redstone>,
+    <minecraft:sugar>,<bloodmagic:component:22>, <minecraft:potion>.withTag({Potion: "minecraft:water"})
+]);
+AlchemyTable.addRecipe(<bloodmagic:cutting_fluid:0>, [
+    <bloodmagic:component:21>, <bloodmagic:component:23>, <bloodmagic:component:24>, 
+    <botania:manaresource:23>, <bloodmagic:component:22>, <minecraft:potion>.withTag({Potion: "minecraft:water"})
+], 5000, 400, 3);

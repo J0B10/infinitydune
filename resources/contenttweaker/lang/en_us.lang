@@ -9,3 +9,4 @@ modifier.demonic.name=Demonic
 modifier.demonic.desc=§oDevours souls!§r\nAny Mobs hit will drop Demonic Will on death! 
 tile.contenttweaker.raw_soulsteel_block.name=Raw Soulsteel Block
 item.contenttweaker.mold_bucket.name=Metal Press Mold: Bucket
+item.contenttweaker.alchemy_jar.name=Alchemy Jar
