@@ -5,8 +5,8 @@
             "item": "morebuckets:rubber_bucket",
             "nbt": "{\"FluidName\": \"water\", \"Amount\": 1000}"
         },
-        "title": "todo",
-        "description": "todo"
+        "title": " Kinda wet... ",
+        "description": "Create a bucket and find some water"
     },
     "criteria": {
         "morebuckets": {
