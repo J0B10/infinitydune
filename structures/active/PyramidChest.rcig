@@ -1,0 +1,271 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "PyramidChest",
+  "items": [
+    {
+      "weight": 2.4,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:web",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:bone",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.54,
+      "min": 1,
+      "max": 12,
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.11,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:emerald",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.71,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "minecraft:name_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.0739658921957016,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:broadsword",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "StatsOriginal": {
+              "nbtType": "compound",
+              "nbt": {
+                "AttackSpeedMultiplier": {
+                  "nbtType": "float",
+                  "nbt": 1.0
+                },
+                "MiningSpeed": {
+                  "nbtType": "float",
+                  "nbt": 6.8
+                },
+                "FreeModifiers": {
+                  "nbtType": "int",
+                  "nbt": 3
+                },
+                "Durability": {
+                  "nbtType": "int",
+                  "nbt": 694
+                },
+                "HarvestLevel": {
+                  "nbtType": "int",
+                  "nbt": 2
+                },
+                "Attack": {
+                  "nbtType": "float",
+                  "nbt": 4.5
+                }
+              }
+            },
+            "Stats": {
+              "nbtType": "compound",
+              "nbt": {
+                "AttackSpeedMultiplier": {
+                  "nbtType": "float",
+                  "nbt": 1.0
+                },
+                "MiningSpeed": {
+                  "nbtType": "float",
+                  "nbt": 6.8
+                },
+                "FreeModifiers": {
+                  "nbtType": "int",
+                  "nbt": 3
+                },
+                "Durability": {
+                  "nbtType": "int",
+                  "nbt": 694
+                },
+                "HarvestLevel": {
+                  "nbtType": "int",
+                  "nbt": 2
+                },
+                "Attack": {
+                  "nbtType": "float",
+                  "nbt": 4.5
+                }
+              }
+            },
+            "Special": {
+              "nbtType": "compound",
+              "nbt": {
+                "Categories": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "weapon"
+                    },
+                    {
+                      "nbtType": "string",
+                      "nbt": "tool"
+                    }
+                  ]
+                }
+              }
+            },
+            "TinkerData": {
+              "nbtType": "compound",
+              "nbt": {
+                "Materials": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "bronze"
+                    },
+                    {
+                      "nbtType": "string",
+                      "nbt": "bronze"
+                    },
+                    {
+                      "nbtType": "string",
+                      "nbt": "bronze"
+                    }
+                  ]
+                },
+                "Modifiers": {
+                  "nbtType": "list",
+                  "nbt": [
+                    {
+                      "nbtType": "string",
+                      "nbt": "toolleveling"
+                    }
+                  ]
+                }
+              }
+            },
+            "Modifiers": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "identifier": {
+                      "nbtType": "string",
+                      "nbt": "dense"
+                    },
+                    "color": {
+                      "nbtType": "int",
+                      "nbt": -1852056
+                    },
+                    "level": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    }
+                  }
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {
+                    "identifier": {
+                      "nbtType": "string",
+                      "nbt": "toolleveling"
+                    },
+                    "color": {
+                      "nbtType": "int",
+                      "nbt": 16777215
+                    },
+                    "level": {
+                      "nbtType": "int",
+                      "nbt": 1
+                    }
+                  }
+                }
+              ]
+            },
+            "Traits": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "string",
+                  "nbt": "dense"
+                },
+                {
+                  "nbtType": "string",
+                  "nbt": "toolleveling"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 32,
+      "item": {
+        "id": "minecraft:flint",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.8473554849624634,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "hwell:burst_seed_sand",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0068187713623047,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "reccomplex:book_generation_tag",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 12,
+      "item": {
+        "id": "embers:ingot_copper",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "mod:tconstruct | mod:hwell | mod:embers"
+}
