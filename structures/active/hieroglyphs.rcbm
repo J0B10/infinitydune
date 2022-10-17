@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "weight": 14.458264350891113,
+      "block": "quark:sandstone_new",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 1,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 2,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 3,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 4,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 5,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 6,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 7,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 8,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 9,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 9,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 10,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 11,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 12,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 13,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 14,
+      "tileEntity": "null"
+    },
+    {
+      "block": "chisel:sandstone-scribbles",
+      "metadata": 15,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "hieroglyphs",
+    "description": [
+      "sandstone blocks with random hieroglyphs"
+    ]
+  }
+}
