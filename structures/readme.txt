@@ -10,18 +10,19 @@ Whitelisted structures must be separated using `|` (logical _or_).
 
 Usefull commands
 -----------------------
-/#gen       -   Generates a structure randomly, just as world gen would
-/#import    -   Generate a structure just the way it was build
-/#list      -   Show a list of all available structures
-/#natural   -   Utility for adding natural floor and negative space
+/#gen               -   Generates a structure randomly, just as world gen would
+/#import            -   Generate a structure just the way it was build
+/#structures list   -   Show a list of all available structures
+/#natural           -   Utility for adding natural floor and negative space
 
 Whitelist
 -----------------------
-DinosaurSkeleton    ?
-DesertBeacon        ?
+DinosaurSkeleton    ✓
+DesertBeacon        ✓
 DesertWatchtower    ?
-SmallPyramid        ?
-SpiderPit
+SmallPyramid        ✓
+SpiderPit           ✓
+LonePillars         ?
 
 Discarded
 -----------------------
@@ -43,6 +44,5 @@ CuboneSkull
 DesertFort          ?
 DesertHut           ?
 UnnaturalCrater     ?
-DinosaurSkull       ?
+DinosaurSkull
 MeteorSite          ?
-LonePillars         ?
