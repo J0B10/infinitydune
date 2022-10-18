@@ -22,7 +22,8 @@ DesertBeacon        ✓
 DesertWatchtower    ?
 SmallPyramid        ✓
 SpiderPit           ✓
-LonePillars         ?
+LonePillars         ✓
+MeteorSite          ✓
 
 Discarded
 -----------------------
@@ -45,4 +46,3 @@ DesertFort          ?
 DesertHut           ?
 UnnaturalCrater     ?
 DinosaurSkull
-MeteorSite          ?

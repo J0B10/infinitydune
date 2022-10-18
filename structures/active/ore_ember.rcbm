@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "weight": 0.5043042898178101,
+      "block": "embers:ore_copper",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.08215867727994919,
+      "block": "embers:ore_aluminum",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.16979001462459564,
+      "block": "embers:ore_tin",
+      "metadata": 0,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Ores (metal)",
+    "description": [
+      "Copper, Tin \u0026 Aluminum with natural spawn rates"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "data": [
     {
       "weight": 2.0680112838745117,
-      "block": "minecraft:coal_block",
+      "block": "quark:charcoal_block",
       "metadata": 0,
       "tileEntity": "null"
     },
