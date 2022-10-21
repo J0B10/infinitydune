@@ -3,6 +3,7 @@ import scripts.utils.addCompressionRecipes;
 import mods.astralsorcery.LightTransmutation;
 import mods.botania.RuneAltar;
 import mods.hwell.addTubeRecipe;
+import mods.hwell.addMutationPasteRecipe;
 import mods.extendedcrafting.TableCrafting;
 
 //Starlight transmutation of Crystal Block to Raw Asul
@@ -30,6 +31,16 @@ recipes.addShaped("age1/asul_machine_case", <hwell:asul_machine_case>, [
     [<ore:dustRedstone>, <ore:blockHeavy>, <ore:dustRedstone>], 
     [<ore:ingotAsul>, <ore:ingotAsul>, <ore:ingotAsul>]
 ]);
+
+//Mutation Paste
+recipes.addShapeless("age1/mutation_paste_block", <hwell:mutation_paste_block>, [
+    <hwell:gaseous_sand>, <ore:blockClay>, <contenttweaker:raw_soulsteel_block>, <hwell:shard_h>
+]);
+
+//Mutator Recipes
+addMutationPasteRecipe(<ore:mysticFlower>.items);
+addMutationPasteRecipe(<ore:garden>.items);
+addMutationPasteRecipe(<ore:listAllFishable>.items);
 
 //Mystical Ore Puller
 recipes.remove(<hwell:puller>);
