@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 
 // Botania
 disable(<botania:grassseeds:8>);
+disable(<botania:manaresource:21>);
 
 //Chisel
 disable(<chisel:chisel_iron>);
