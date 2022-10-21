@@ -100,6 +100,7 @@ disable(<hwell:protection_block>);
 disable(<hwell:heat_furnace>);
 disable(<hwell:precision_grinder_empty>);
 disable(<hwell:separator>);
+disable(<hwell:raw_repairing_paste>);
 disable(<immersiveengineering:stone_decoration>);
 disable(<immersiveengineering:stone_decoration:1>);
 disable(<immersiveengineering:tool>);
