@@ -1,0 +1,20 @@
+{
+    "modifier": "demonic",
+    "text": [
+      {
+        "text": "A demonic weapon allows you to obtain all the will of a creature."
+      }
+    ],
+    "effects": [
+      "Monsters get 15s of Soul Snare effect on hit",
+      "Monsters with Soul Snare effect drop Demonic Will on death",
+      "Single use"
+    ],
+    "demoTool": [
+      "tconstruct:broadsword",
+      "tconstruct:rapier",
+      "tconstruct:cleaver",
+      "tconstruct:arrow"
+    ]
+  }
+  
