@@ -78,3 +78,12 @@ Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/illuminator"
     <astralsorcery:itemusabledust>, <botania:shinyflower:4>, <astralsorcery:itemusabledust>,
     <hwell:locked_light>, <hwell:locked_light>, <hwell:locked_light>, <hwell:locked_light>
 ]);
+
+//Illumination Wand
+Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination");
+Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/tool_illumination", <astralsorcery:itemilluminationwand>, 1600, 300, [
+    null, <astralsorcery:itemusabledust>, <hwell:locked_light>,
+    <astralsorcery:itemusabledust>, <astralsorcery:blockmarble:6>, <ore:dustAquamarine>,
+    <astralsorcery:blockmarble:6>, null, null,
+    null, null, <ore:glowstone>, null
+]);
