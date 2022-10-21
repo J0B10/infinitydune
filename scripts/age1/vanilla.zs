@@ -25,7 +25,7 @@ val heavy_rod = <tconstruct:tough_tool_rod>.withTag({Material: "heavy_ingot"});
 recipes.remove(<minecraft:piston>);
 recipes.addShaped("age1/piston", <minecraft:piston>, [
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>], 
-    [<quark:sturdy_stone>, heavy_rod, <quark:sturdy_stone>], 
+    [<quark:sturdy_stone>, heavy_rod | <ore:stickIron>, <quark:sturdy_stone>], 
     [<quark:sturdy_stone>, <ore:dustRedstone>, <quark:sturdy_stone>]
 ]);
 
