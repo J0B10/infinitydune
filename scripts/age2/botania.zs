@@ -20,3 +20,16 @@ recipes.addShaped("age2/botania_lens", <botania:lens>, [
     [<ore:ingotCopper>, <botania:managlass> | <botania:managlasspane>, <ore:ingotCopper>], 
     [null, <ore:ingotCopper>, null]
 ]);
+
+//Hourglass
+recipes.remove(<botania:hourglass>);
+recipes.addShaped("age2/hourglass", <botania:hourglass>, [
+	[<ore:ingotGold>, <ore:dustRedstone>, <ore:ingotGold>], 
+	[<botania:managlass>, null, <botania:managlass>], 
+	[<ore:ingotGold>, <ore:dustRedstone>, <ore:ingotGold>]
+]);
+recipes.addShaped("age2/hourglass_brass", <botania:hourglass>, [
+	[<ore:ingotAlubrass>, <ore:dustRedstone>, <ore:ingotAlubrass>], 
+	[<botania:managlass>, null, <botania:managlass>], 
+	[<ore:ingotAlubrass>, <ore:dustRedstone>, <ore:ingotAlubrass>]
+]);
