@@ -14,7 +14,7 @@ LightTransmutation.addTransmutation(<hwell:crystal_block>, <hwell:raw_asul_block
 addCompressionRecipes("raw_soulsteel", null, <hwell:raw_soulsteel>, <contenttweaker:raw_soulsteel_block>);
 recipes.remove(<hwell:raw_soulsteel>);
 furnace.remove(<hwell:soulsteel_ingot>);
-recipes.addShaped("age1/raw_soulsteel", <hwell:raw_soulsteel> * 4, [
+recipes.addShaped("age2/raw_soulsteel", <hwell:raw_soulsteel> * 4, [
     [<ore:ingotHeavy>, <hwell:soul_dust>, <ore:ingotHeavy>], 
     [<hwell:soul_dust>, <liquid:liquid_souls> * 1000, <hwell:soul_dust>], 
     [<ore:ingotHeavy>, <hwell:soul_dust>, <ore:ingotHeavy>]
@@ -26,14 +26,14 @@ addTubeRecipe(<contenttweaker:raw_soulsteel_block>, <hwell:soulsteel_block>);
 
 //Asul Machine Case
 recipes.remove(<hwell:asul_machine_case>);
-recipes.addShaped("age1/asul_machine_case", <hwell:asul_machine_case>, [
+recipes.addShaped("age2/asul_machine_case", <hwell:asul_machine_case>, [
     [<ore:ingotAsul>, <ore:ingotAsul>, <ore:ingotAsul>], 
     [<ore:dustRedstone>, <ore:blockHeavy>, <ore:dustRedstone>], 
     [<ore:ingotAsul>, <ore:ingotAsul>, <ore:ingotAsul>]
 ]);
 
 //Mutation Paste
-recipes.addShapeless("age1/mutation_paste_block", <hwell:mutation_paste_block>, [
+recipes.addShapeless("age2/mutation_paste_block", <hwell:mutation_paste_block>, [
     <hwell:gaseous_sand>, <ore:blockClay>, <contenttweaker:raw_soulsteel_block>, <hwell:shard_h>
 ]);
 
