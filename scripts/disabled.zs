@@ -89,3 +89,17 @@ disable(<morebuckets:diamond_bucket>);
 
 //Tinkers Construct
 disable(<tconstruct:tooltables:1>);
+
+//Disabled for now to prevent exploits
+//TODO Balance and reenable
+disable(<botania:terraplate>);
+disable(<hwell:raw_mystic_iron>);
+disable(<hwell:mystic_iron_ingot>);
+disable(<hwell:producer>);
+disable(<hwell:protection_block>);
+disable(<hwell:heat_furnace>);
+disable(<hwell:precision_grinder_empty>);
+disable(<hwell:separator>);
+disable(<immersiveengineering:stone_decoration>);
+disable(<immersiveengineering:stone_decoration:1>);
+disable(<immersiveengineering:tool>);
