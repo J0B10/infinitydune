@@ -78,6 +78,22 @@ disable(<hwell:graft_stone>);
 disable(<hwell:core_stone>);
 disable(<hwell:seed_of_the_nether>);
 disable(<hwell:seed_of_the_end>);
+disable(<hwell:mystic_iron_sword>);
+disable(<hwell:mystic_iron_dagger>);
+disable(<hwell:mystic_iron_axe>);
+disable(<hwell:mystic_iron_pickaxe>);
+disable(<hwell:mystic_iron_helmet>);
+disable(<hwell:mystic_iron_chest>);
+disable(<hwell:mystic_iron_legs>);
+disable(<hwell:mystic_iron_boots>);
+disable(<hwell:soulsteel_sword>);
+disable(<hwell:soulsteel_dagger>);
+disable(<hwell:soulsteel_axe>);
+disable(<hwell:soulsteel_pickaxe>);
+disable(<hwell:soulsteel_helmet>);
+disable(<hwell:soulsteel_chest>);
+disable(<hwell:soulsteel_legs>);
+disable(<hwell:soulsteel_boots>);
 
 //Immersive Engineering
 disableAll(<immersiveengineering:ore>, 0, 5);
