@@ -32,6 +32,38 @@ recipes.addShaped("age2/asul_machine_case", <hwell:asul_machine_case>, [
     [<ore:ingotAsul>, <ore:ingotAsul>, <ore:ingotAsul>]
 ]);
 
+//Block Setter
+recipes.remove(<hwell:setter>);
+recipes.addShaped("age2/setter", <hwell:setter>, [
+    [<ore:ingotHeavy>, <ore:manaPearl>, <ore:ingotHeavy>], 
+    [<ore:ingotAsul>, <ore:gearTin>, <ore:ingotAsul>], 
+    [<ore:ingotHeavy>, <hwell:asul_machine_case>, <ore:ingotHeavy>]
+]);
+
+//Freezer
+recipes.remove(<hwell:freezer>);
+recipes.addShaped("age2/freezer", <hwell:freezer>, [
+    [<hwell:shard_ca>, <liquid:astralsorcery.liquidstarlight> * 1000, <hwell:shard_ca>], 
+    [<ore:ingotAsul>, <ore:stoneMarble>, <ore:ingotAsul>], 
+    [<ore:gemHearthWellCrystal>, <hwell:asul_machine_case>, <ore:gemHearthWellCrystal>]
+]);
+
+//Nourisher
+recipes.remove(<hwell:nourisher>);
+recipes.addShaped("age2/nourisher", <hwell:nourisher>, [
+    [<hwell:locked_light>, <botania:grassseeds>, <hwell:locked_light>], 
+    [<ore:ingotAsul>, <hwell:fullgrass_block>, <ore:ingotAsul>], 
+    [<hwell:fullgrass_block>, <hwell:asul_machine_case>, <hwell:fullgrass_block>]
+]);
+
+//Light Collector
+recipes.remove(<hwell:light_collector>);
+recipes.addShaped("age2/light_collector", <hwell:light_collector>, [
+	[<ore:stoneWhiteBrackish>, <astralsorcery:itemcraftingcomponent:3>, <ore:stoneWhiteBrackish>], 
+	[<hwell:shard_ca>, <ore:blockHearthWellNetherCrystal>, <hwell:shard_ca>], 
+	[<ore:stoneWhiteBrackish>, <hwell:shard_ca>, <ore:stoneWhiteBrackish>]
+]);
+
 //Mutation Paste
 recipes.addShapeless("age2/mutation_paste_block", <hwell:mutation_paste_block>, [
     <hwell:gaseous_sand>, <ore:blockClay>, <contenttweaker:raw_soulsteel_block>, <hwell:shard_h>
