@@ -1,4 +1,4 @@
-#priority 101
+#priority 104
 #loader contenttweaker
 #ignoreBracketErrors
 import scripts.ct_global;

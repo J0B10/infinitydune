@@ -1,4 +1,4 @@
-#priority 102
+#priority 105
 #loader contenttweaker
 //Suppress bracket errors caused by <item:hwell:heavy_mesh>
 #ignoreBracketErrors
