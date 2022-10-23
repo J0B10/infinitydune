@@ -4,7 +4,7 @@
 #ignoreBracketErrors
 import scripts.ct_global;
 import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.tconstruct.MaterialBuilder;
+import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.Fluid;
 import mods.contenttweaker.Color;
@@ -29,7 +29,7 @@ heavy_fluid.material = <blockmaterial:Lava>;
 heavy_fluid.register();
 
 //TC Material
-val heavy_mat = MaterialBuilder.create("heavy_ingot");
+val heavy_mat = ExtendedMaterialBuilder.create("heavy_ingot");
 heavy_mat.color = 0x4D4E58;
 heavy_mat.hidden = false;
 heavy_mat.liquid = <liquid:heavy_fluid>;
@@ -44,9 +44,17 @@ heavy_mat.addHeadMaterialStats(200, 5.2f, 3.0f, 1);
 heavy_mat.addHandleMaterialStats(1.5f, 50);
 heavy_mat.addExtraMaterialStats(90);
 heavy_mat.addBowMaterialStats(1.0f, 1.3f, 3.0f);
+heavy_mat.addProjectileMaterialStats();
+heavy_mat.addCoreMaterialStats(12, 10);
+heavy_mat.addPlatesMaterialStats(1.5, 5, 0);
+heavy_mat.addTrimMaterialStats(8);
 heavy_mat.addMaterialTrait("duritos", "head");
 heavy_mat.addMaterialTrait("cheap", "handle");
 heavy_mat.addMaterialTrait("cheap", "extra");
+heavy_mat.addMaterialTrait("duritos", "bow");
+heavy_mat.addMaterialTrait("duritos", "core");
+heavy_mat.addMaterialTrait("cheap", "plates");
+heavy_mat.addMaterialTrait("cheap", "trim");
 heavy_mat.register();
 
 //Heavy Mesh Ingot Cast

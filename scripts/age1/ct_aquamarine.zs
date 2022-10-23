@@ -3,8 +3,9 @@
 #ignoreBracketErrors
 import scripts.ct_global;
 import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.tconstruct.MaterialBuilder;
+import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
 import mods.contenttweaker.tconstruct.TraitBuilder;
+import mods.contenttweaker.conarm.ArmorTraitBuilder;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.Color;
 import crafttweaker.world.IWorld;
@@ -19,18 +20,27 @@ function astralModifier(base as float, world as IWorld, extra as bool) as float 
 val astral = TraitBuilder.create("astral1");
 astral.color = 0x1AADED;
 astral.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
-    val discidiaVisible = target.world.getMoonPhase() < 2 || target.world.getMoonPhase() > 4;
+    val discidiaVisible = target.world.getMoonPhase() > 0 && target.world.getMoonPhase() < 6;
     return newDamage * astralModifier(0.1, target.world, discidiaVisible);
 };
 astral.getMiningSpeed = function(trait, tool, event) {
     val world = event.player.world;
-    val evorsioVisible = world.getMoonPhase() < 7 && world.getMoonPhase() > 1;
+    val evorsioVisible = world.getMoonPhase() < 3 || world.getMoonPhase() > 5;
     event.newSpeed = event.newSpeed * astralModifier(0.1, world, evorsioVisible);
 };
 astral.register();
 
+//Astral Armor Trait
+val armara = ArmorTraitBuilder.create("astral1");
+armara.color = 0x1AADED;
+armara.onDamaged = function(trait, armor, player, source, damage, newDamage, evt) {
+    val armaraVisible = player.world.getMoonPhase() > 2;
+    return newDamage * (2.0f - astralModifier(0.1, player.world, armaraVisible));
+};
+armara.register();
+
 //TC Material
-val aquamarine = MaterialBuilder.create("aquamarine");
+val aquamarine = ExtendedMaterialBuilder.create("aquamarine");
 aquamarine.color = 0x1AADED;
 aquamarine.hidden = false;
 aquamarine.craftable = true;
@@ -42,7 +52,15 @@ aquamarine.addItem(<item:jaopca:item_nuggetaquamarine>, 1, 144 / 9);
 aquamarine.addHeadMaterialStats(130, 5.0, 3.4, 1);
 aquamarine.addHandleMaterialStats(0.7, 0);
 aquamarine.addExtraMaterialStats(20);
+aquamarine.addProjectileMaterialStats();
+aquamarine.addCoreMaterialStats(11, 4.5);
+aquamarine.addPlatesMaterialStats(0.7, 0, 0);
+aquamarine.addTrimMaterialStats(3);
 aquamarine.addMaterialTrait("astral1", "head");
 aquamarine.addMaterialTrait("astral1", "handle");
 aquamarine.addMaterialTrait("astral1", "extra");
+aquamarine.addMaterialTrait("astral1", "projectile");
+aquamarine.addMaterialTrait("astral1_armor", "core");
+aquamarine.addMaterialTrait("astral1_armor", "plates");
+aquamarine.addMaterialTrait("astral1_armor", "trim");
 aquamarine.register();

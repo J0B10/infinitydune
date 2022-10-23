@@ -3,7 +3,7 @@
 #ignoreBracketErrors
 import scripts.ct_global;
 import mods.contenttweaker.VanillaFactory;
-import mods.contenttweaker.tconstruct.MaterialBuilder;
+import mods.contenttweaker.conarm.ExtendedMaterialBuilder;
 import mods.contenttweaker.tconstruct.TraitBuilder;
 import mods.contenttweaker.Random;
 import mods.contenttweaker.Color;
@@ -37,7 +37,7 @@ mysterious.calcDamage = function(trait, tool, attacker, target, originalDamage, 
 mysterious.register();
 
 //TC Material
-val soulsteel_mat = MaterialBuilder.create("soulsteel");
+val soulsteel_mat = ExtendedMaterialBuilder.create("soulsteel");
 soulsteel_mat.color = 0xC8ADD1;
 soulsteel_mat.hidden = false;
 soulsteel_mat.liquid = <liquid:soulsteel>;
@@ -50,8 +50,18 @@ soulsteel_mat.addItem(<item:hwell:soulsteel_nugget>, 144 / 9);
 soulsteel_mat.addHeadMaterialStats(480, 6.0, 3.8f, 2);
 soulsteel_mat.addHandleMaterialStats(0.7f, 70);
 soulsteel_mat.addExtraMaterialStats(100);
+soulsteel_mat.addBowMaterialStats(1.36, 1.42, 3);
+soulsteel_mat.addProjectileMaterialStats();
+soulsteel_mat.addCoreMaterialStats(14, 10);
+soulsteel_mat.addPlatesMaterialStats(0.7, 6, 1);
+soulsteel_mat.addTrimMaterialStats(8);
 soulsteel_mat.addMaterialTrait("mysterious", "head");
+soulsteel_mat.addMaterialTrait("mysterious", "projectile");
 soulsteel_mat.addMaterialTrait("writable1", "head");
 soulsteel_mat.addMaterialTrait("writable1", "handle");
 soulsteel_mat.addMaterialTrait("writable1", "extra");
+soulsteel_mat.addMaterialTrait("writable1", "bow");
+soulsteel_mat.addMaterialTrait("writable1", "core");
+soulsteel_mat.addMaterialTrait("writable1", "plates");
+soulsteel_mat.addMaterialTrait("writable1", "trim");
 soulsteel_mat.register();

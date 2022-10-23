@@ -21,3 +21,7 @@ modifier.astral1.name=Astral I
 modifier.astral1.desc=§oStrengthened by the stars!§r\nDamage bonus and mining speed increase of 10% at night.\nDiscidia & Evorsio give 10% additional bonus when visible.
 modifier.astral2.name=Astral II
 modifier.astral2.desc=§oStrengthened by the stars!§r\nDamage bonus and mining speed increase of 15% at night.\nDiscidia & Evorsio give 15% additional bonus when visible.
+modifier.astral1_armor.name=Astral I
+modifier.astral1_armor.desc=§oStrengthened by the stars!§r\nDamage reduction of 10% at night.\nArmara constellation gives 10% additional bonus when visible.
+modifier.astral2_armor.name=Astral II
+modifier.astral2_armor.desc=§oStrengthened by the stars!§r\nDamage reduction of 15% at night.\nArmara constellation gives 15% additional bonus when visible.
