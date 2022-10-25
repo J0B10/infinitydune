@@ -74,7 +74,7 @@ Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/gateway", <a
 Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/illuminator");
 Altar.addAttunementAltarRecipe("astralsorcery:shaped/internal/altar/illuminator", <astralsorcery:blockworldilluminator>, 1400, 300, [
     <astralsorcery:itemusabledust>, <bloodmagic:sigil_blood_light>, <astralsorcery:itemusabledust>,
-    <ore:gemAquamarine>, <ore:blockHearthWellNetherCrystal>, <ore:gemAquamarine>,
+    <ore:dustAquamarine>, <ore:blockHearthWellNetherCrystal>, <ore:dustAquamarine>,
     <astralsorcery:itemusabledust>, <botania:shinyflower:4>, <astralsorcery:itemusabledust>,
     <hwell:locked_light>, <hwell:locked_light>, <hwell:locked_light>, <hwell:locked_light>
 ]);

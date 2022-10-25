@@ -2,6 +2,11 @@
 import mods.astralsorcery.Altar;
 import mods.astralsorcery.Lightwell;
 import mods.astralsorcery.LightTransmutation;
+import mods.astralsorcery.Grindstone;
+
+//Aquamarine Dust
+Grindstone.addRecipe(<ore:oreAquamarine>, <jaopca:item_dustaquamarine> * 2, 0.85f);
+Grindstone.addRecipe(<ore:gemAquamarine>, <jaopca:item_dustaquamarine>, 0.15f);
 
 //////////////////////////////////////////////
 //                Discovery                 //
