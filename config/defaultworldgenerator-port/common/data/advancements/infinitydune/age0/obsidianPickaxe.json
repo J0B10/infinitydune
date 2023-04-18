@@ -1,0 +1,24 @@
+{
+    "parent": "infinitydune:age0/smeltery",
+    "display": {
+        "icon": {
+            "item": "tconstruct:pickaxe",
+            "nbt": "{ \"TinkerData\": { \"Materials\":[ \"wood\", \"obsidian\", \"stone\" ] } }"
+        },
+        "title": "   Dragonglass   ",
+        "description": "Cast an obsidian pickaxe head in your smeltery to upgrade your tools."
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "tconstruct:pick_head",
+                        "nbt": "{ \"Material\": \"obsidian\" }"
+                    }
+                ]
+            }
+        }
+    }
+}
