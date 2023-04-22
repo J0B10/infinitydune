@@ -15,6 +15,9 @@ Usefull commands
 /#structures list   -   Show a list of all available structures
 /#natural           -   Utility for adding natural floor and negative space
 
+Sandy Paths:
+//replace wool 30%gravel,20%sand,20%chisel:sandstoneyellow:9,20%chisel:sandstoneyellow1:8,10%chisel:sandstoneyellow:7
+
 Whitelist
 -----------------------
 DinosaurSkeleton    ✓
