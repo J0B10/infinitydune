@@ -17,6 +17,7 @@ Usefull commands
 
 Sandy Paths:
 //replace wool 30%gravel,20%sand,20%chisel:sandstoneyellow:9,20%chisel:sandstoneyellow1:8,10%chisel:sandstoneyellow:7
+//replace concrete 20%sand,35%sandstone,25%chisel:sandstoneyellow1:8,10%chisel:sandstoneyellow:9
 
 Whitelist
 -----------------------
