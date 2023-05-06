@@ -1,0 +1,62 @@
+{
+  "data": {
+    "environmentMatcher": "",
+    "transformers": [
+      {
+        "type": "ensureBlocks",
+        "transformer": {
+          "id": "ensureBlocks_5c7d89f9",
+          "sourceExpression": "id\u003dminecraft:leaves",
+          "destExpression": "is:air | is:leaves | is:foliage"
+        }
+      },
+      {
+        "type": "ensureBlocks",
+        "transformer": {
+          "id": "ensureBlocks_6aab9454",
+          "sourceExpression": "id\u003dminecraft:log",
+          "destExpression": "is:air | is:leaves | is:foliage | id\u003dharvestcraft:date_sapling"
+        }
+      },
+      {
+        "type": "replaceAll",
+        "transformer": {
+          "uniform": false,
+          "id": "replaceAll_f5759680",
+          "sourceExpression": "harvestcraft:pamdate",
+          "destination": [
+            {
+              "weight": 1.124274492263794,
+              "block": "minecraft:air",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "block": "harvestcraft:pamdate",
+              "metadata": 0,
+              "tileEntity": "null"
+            },
+            {
+              "weight": 0.5043042898178101,
+              "block": "harvestcraft:pamdate",
+              "metadata": 1,
+              "tileEntity": "null"
+            },
+            {
+              "weight": 0.25072842836380005,
+              "block": "harvestcraft:pamdate",
+              "metadata": 2,
+              "tileEntity": "null"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Date Tree",
+    "description": [
+      "Ensure logs and randomize date fruits"
+    ]
+  }
+}
