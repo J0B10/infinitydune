@@ -1,0 +1,182 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "obelisk_obsidian_chest",
+  "items": [
+    {
+      "weight": 0.5889394283294678,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "minecraft:obsidian",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 4.065970420837402,
+      "min": 1,
+      "max": 4,
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.5121370553970337,
+      "min": 1,
+      "max": 8,
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:pick_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "obsidian"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.39763605594635,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:arrow_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "obsidian"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:knife_blade",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "obsidian"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:axe_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "obsidian"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.5889394283294678,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:materials",
+        "damage": 14,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:resist_mat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_sack",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 7.019199371337891,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "minecraft:sand",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 2.0475566387176514,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "hwell:burst_seed_sand",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "astralsorcery:itemconstellationpaper",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "astralsorcery": {
+              "nbtType": "compound",
+              "nbt": {}
+            }
+          }
+        }
+      }
+    }
+  ],
+  "dependencyExpression": "mod:tconstruct | mod:conarm"
+}
