@@ -1,0 +1,301 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "village_chest_tool",
+  "items": [
+    {
+      "weight": 1.290178656578064,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:pick_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "bronze"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:shovel_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "bronze"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:axe_head",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "bronze"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "quark:backpack",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Inventory": {
+              "nbtType": "list",
+              "nbt": [
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                },
+                {
+                  "nbtType": "compound",
+                  "nbt": {}
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.3978064954280853,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_sack",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_goggles",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_sneak",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.5354365706443787,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_belt",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_speed",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_attack",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_reach",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.024237150326371193,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:knife_blade",
+        "damage": 0,
+        "count": 1,
+        "tag": {
+          "nbtType": "compound",
+          "nbt": {
+            "Material": {
+              "nbtType": "string",
+              "nbt": "silver"
+            }
+          }
+        }
+      }
+    },
+    {
+      "weight": 0.009064221754670143,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:materials",
+        "damage": 50,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "mod:tconstruct | mod:conarm"
+}
