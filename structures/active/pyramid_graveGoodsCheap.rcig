@@ -131,6 +131,16 @@
         "damage": 0,
         "count": 1
       }
+    },
+    {
+      "weight": 0.009064221754670143,
+      "min": 1,
+      "max": 64,
+      "item": {
+        "id": "tconstruct:materials",
+        "damage": 50,
+        "count": 1
+      }
     }
   ],
   "dependencyExpression": "mod:tconstruct | mod:embers"
