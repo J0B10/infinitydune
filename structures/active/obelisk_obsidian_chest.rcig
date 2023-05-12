@@ -176,7 +176,27 @@
           }
         }
       }
+    },
+    {
+      "weight": 1.0,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "botania:blacklotus",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.009064221754670143,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "tconstruct:materials",
+        "damage": 50,
+        "count": 1
+      }
     }
   ],
-  "dependencyExpression": "mod:tconstruct | mod:conarm"
+  "dependencyExpression": "mod:tconstruct | mod:conarm | mod:botania"
 }
