@@ -6,7 +6,7 @@ for i in 0 to 15 {
 }
 
 
-//Empty BBuckets
+//Empty Buckets
 <ore:listAllEmptyBucket>.add(<minecraft:bucket>);
 <ore:listAllEmptyBucket>.add(<morebuckets:aluminum_bucket>);
 <ore:listAllEmptyBucket>.add(<morebuckets:copper_bucket>);
@@ -76,6 +76,11 @@ for i in 0 to 3 {
 <ore:listAllFishable>.add(<harvestcraft:shrimprawitem>);
 <ore:listAllFishable>.add(<harvestcraft:snailrawitem>);
 <ore:listAllFishable>.add(<harvestcraft:turtlerawitem>);
+
+//Water (cooking)
+<ore:listAllwater>.add(<botania:waterbowl>.withTag({Fluid: {FluidName: "water", Amount: 1000}}));
+<ore:listAllwater>.add(<hwell:crystal_bowl_water>);
+<ore:listAllwater>.remove(<minecraft:water_bucket>);
 
 //Gardens
 <ore:garden>.add(<harvestcraft:aridgarden>);
