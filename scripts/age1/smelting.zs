@@ -24,7 +24,7 @@ val skipp as string[] = [
 ];
 for entry in <ore:ore*> {
     val dust = entry.name.replace("ore", "dust");
-    if (!(skipp has dust) && (oreDict has dust) && !oreDict[dust].empty) {
+    if (!(skipp has dust) && (oreDict has dust)) {
         Grindstone.removeRecipe(oreDict[dust].firstItem);
         if (!(remove has dust)) {
             Grindstone.addRecipe(entry, oreDict[dust].firstItem, 0.5f);
