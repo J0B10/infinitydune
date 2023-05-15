@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "biomes": "$MOUNTAIN"
+    },
+    {
+      "biomes": "$HILLS"
+    }
+  ],
+  "metadata": {
+    "title": "Hills",
+    "description": [
+      "Only spawn structure in Hills \u0026 Mointain Biomes"
+    ]
+  }
+}
