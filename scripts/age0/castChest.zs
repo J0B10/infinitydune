@@ -356,5 +356,7 @@ static nbt as IData = {
     }
 };
 
-static item as IItemStack= <tconstruct:tooltables:4>.withTag(nbt);
-item.addTooltip(format.gold("Prefilled with all 40 casts"));
+static item as IItemStack= <tconstruct:tooltables:4>
+   .withTag(nbt)
+   .withDisplayName("§fCasts Chest")
+   .withLore(["§6Prefilled with all 40 casts."]);
