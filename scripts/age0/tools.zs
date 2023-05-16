@@ -35,8 +35,6 @@ recipes.addShaped("age0/cast_chest", cast_chest, [
     [<tconstruct:cast_custom:1>, <ore:chest>, <tconstruct:cast>.withTag({PartType: "tconstruct:pick_head"})], 
     [<ore:blockAlubrass>, <tconstruct:cast:0>, <ore:blockAlubrass>]
 ]);
-JEI.addItem(cast_chest);
-JEI.addItem(pattern_chest);
 
 //Tool Station
 recipes.remove(<tconstruct:tooltables:3>);
