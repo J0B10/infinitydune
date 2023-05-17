@@ -404,46 +404,6 @@
       }
     },
     {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:leather_leggings",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:leather_chestplate",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:leather_helmet",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
-      "weight": 1.0,
-      "min": 1,
-      "max": 1,
-      "item": {
-        "id": "minecraft:leather_boots",
-        "damage": 0,
-        "count": 1
-      }
-    },
-    {
       "weight": 0.27,
       "min": 1,
       "max": 1,
@@ -459,6 +419,56 @@
       "max": 1,
       "item": {
         "id": "minecraft:compass",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.0976562350988388,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:travel_sack",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_speed",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_attack",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 0.646636426448822,
+      "min": 1,
+      "max": 1,
+      "item": {
+        "id": "conarm:gauntlet_mat_reach",
         "damage": 0,
         "count": 1
       }

@@ -67,8 +67,8 @@
       "min": 1,
       "max": 8,
       "item": {
-        "id": "botania:manaresource",
-        "damage": 1,
+        "id": "minecraft:diamond",
+        "damage": 0,
         "count": 1
       }
     },
@@ -565,5 +565,5 @@
       }
     }
   ],
-  "dependencyExpression": "mod:botania"
+  "dependencyExpression": ""
 }
