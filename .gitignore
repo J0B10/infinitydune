@@ -42,3 +42,7 @@ config/splash.properties
 !build/**
 build/out
 build/generate.py
+
+# except galery images
+!gallery
+!gallery/**
