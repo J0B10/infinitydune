@@ -55,15 +55,19 @@
                 },
                 {
                     "type": "item",
-                    "name": "embers:nugget_bronze",
+                    "name": "tconstruct:shard",
                     "weight": 4,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 8,
-                                "max": 36
+                                "min": 2,
+                                "max": 9
                             }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{\"Material\": \"bronze\"}"
                         }
                     ]
                 },

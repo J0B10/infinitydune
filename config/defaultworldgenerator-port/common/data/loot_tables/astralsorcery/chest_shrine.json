@@ -56,15 +56,19 @@
                 },
                 {
                     "type": "item",
-                    "name": "embers:ingot_bronze",
+                    "name": "tconstruct:shard",
                     "weight": 10,
                     "functions": [
                         {
                             "function": "set_count",
                             "count": {
-                                "min": 1,
-                                "max": 3
+                                "min": 2,
+                                "max": 9
                             }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{\"Material\": \"bronze\"}"
                         }
                     ]
                 },
