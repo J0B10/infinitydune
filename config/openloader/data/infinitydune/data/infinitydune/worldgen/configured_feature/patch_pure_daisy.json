@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 1,
+    "xz_spread": 0,
+    "y_spread": 0,
+    "feature": {
+      "feature": {
+        "type": "minecraft:vegetation_patch",
+        "config": {
+          "surface": "floor",
+          "depth": 1,
+          "vertical_range": 1,
+          "extra_bottom_block_chance": 0,
+          "extra_edge_column_chance": 0,
+          "vegetation_chance": 1,
+          "xz_radius": 0,
+          "replaceable": "#minecraft:dead_bush_may_place_on",
+          "ground_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:coarse_dirt"
+            }
+          },
+          "vegetation_feature": {
+            "feature": {
+              "type": "minecraft:simple_block",
+              "config": {
+                "to_place": {
+                  "type": "minecraft:simple_state_provider",
+                  "state": {
+                    "Name": "botania:pure_daisy"
+                  }
+                }
+              }
+            },
+            "placement": []
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    }
+  }
+}

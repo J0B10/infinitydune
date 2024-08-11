@@ -157,6 +157,9 @@
         "minecraft:spring_lava"
       ],
       [
+        "infinitydune:patch_grass",
+        "infinitydune:patch_pure_daisy",
+        "infinitydune:patch_mystical_flower",
         "minecraft:glow_lichen",
         "minecraft:flower_default",
         "minecraft:patch_grass_badlands",
