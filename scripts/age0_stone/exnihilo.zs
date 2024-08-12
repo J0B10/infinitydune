@@ -61,14 +61,14 @@ recipes.addJsonRecipe("sifting/ens_bamboo", {
 recipes.removeByName("exnihilosequentia:sifting/ens_redstone");
 recipes.removeByName("exnihilosequentia:sifting/ens_glowstone");
 recipes.addJsonRecipe("sifting/ens_redstone", {
-  "type": "exnihilosequentia:sifting",
-  "input": {
-    "item": "exnihilosequentia:dust"
+  type: "exnihilosequentia:sifting",
+  input: {
+    item: "exnihilosequentia:dust"
   },
-  "result": {
+  result: {
     item: "minecraft:redstone"
   },
-  "rolls": [
+  rolls: [
     {
       chance: 0.125,
       mesh: "flint"
@@ -85,14 +85,14 @@ recipes.addJsonRecipe("sifting/ens_redstone", {
   waterlogged: false
 });
 recipes.addJsonRecipe("sifting/ens_glowstone", {
-  "type": "exnihilosequentia:sifting",
-  "input": {
-    "item": "exnihilosequentia:dust"
+  type: "exnihilosequentia:sifting",
+  input: {
+    item: "exnihilosequentia:dust"
   },
-  "result": {
+  result: {
     item: "minecraft:glowstone_dust"
   },
-  "rolls": [
+  rolls: [
     {
       chance: 0.05,
       mesh: "flint"
@@ -108,14 +108,14 @@ recipes.addJsonRecipe("sifting/ens_glowstone", {
 // higher drop chances for copper
 recipes.removeByName("exnihilosequentia:sifting/ens_copper_pieces_gravel");
 recipes.addJsonRecipe("sifting/ens_copper_pieces_gravel", {
-  "type": "exnihilosequentia:sifting",
-  "input": {
-    "item": "minecraft:gravel"
+  type: "exnihilosequentia:sifting",
+  input: {
+    item: "minecraft:gravel"
   },
-  "result": {
+  result: {
     item: "exnihilosequentia:copper_pieces"
   },
-  "rolls": [
+  rolls: [
     {
       chance: 0.075,
       mesh: "flint"
