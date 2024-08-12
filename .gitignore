@@ -13,6 +13,9 @@
 !scripts
 !scripts/**
 
+# ignore example scripts 
+scripts/examples
+
 # except custom resources
 !resources
 !resources/**
