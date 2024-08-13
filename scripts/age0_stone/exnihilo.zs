@@ -44,108 +44,37 @@ addCrookHarvest("harvest/dead_bush", <item:minecraft:dead_bush>, [
 
 // bambo comes from sand instead of dirt 
 recipes.removeByName("exnihilosequentia:sifting/ens_bamboo");
-recipes.addJsonRecipe("sifting/ens_bamboo", {
-  type: "exnihilosequentia:sifting",
-  input: { 
-    item: "minecraft:sand" 
-  },
-  result: { 
-    Count: 1, 
-    item: "minecraft:bamboo"
-  },
-  rolls: [ 
-    { 
-      chance: 0.05, 
-      mesh: "flint" 
-    }
-  ],
-  waterlogged: false
-});
+addSifting("sifting/ens_bamboo", <item:minecraft:sand>, <item:minecraft:bamboo>, [
+  siftingRoll("flint", 0.05),
+]);
 
 // glowstone and redstone may be sifted with flint mesh
 recipes.removeByName("exnihilosequentia:sifting/ens_redstone");
 recipes.removeByName("exnihilosequentia:sifting/ens_glowstone");
-recipes.addJsonRecipe("sifting/ens_redstone", {
-  type: "exnihilosequentia:sifting",
-  input: {
-    item: "exnihilosequentia:dust"
-  },
-  result: {
-    item: "minecraft:redstone"
-  },
-  rolls: [
-    {
-      chance: 0.125,
-      mesh: "flint"
-    },
-    {
-      chance: 0.175,
-      mesh: "iron"
-    },
-    {
-      chance: 0.25,
-      mesh: "diamond"
-    }
-  ],
-  waterlogged: false
-});
-recipes.addJsonRecipe("sifting/ens_glowstone", {
-  type: "exnihilosequentia:sifting",
-  input: {
-    item: "exnihilosequentia:dust"
-  },
-  result: {
-    item: "minecraft:glowstone_dust"
-  },
-  rolls: [
-    {
-      chance: 0.05,
-      mesh: "flint"
-    },
-    {
-      chance: 0.0625,
-      mesh: "iron"
-    }
-  ],
-  waterlogged: false
-});
+addSifting("sifting/ens_redstone", <item:exnihilosequentia:dust>, <item:minecraft:redstone>, [
+  siftingRoll("flint", 0.125),
+  siftingRoll("iron", 0.175),
+  siftingRoll("diamond", 0.25),
+]);
+addSifting("sifting/ens_glowstone", <item:exnihilosequentia:dust>, <item:minecraft:glowstone_dust>, [
+  siftingRoll("flint", 0.5),
+  siftingRoll("iron", 0.0625),
+]);
 
 // higher drop chances for copper
 recipes.removeByName("exnihilosequentia:sifting/ens_copper_pieces_gravel");
-recipes.addJsonRecipe("sifting/ens_copper_pieces_gravel", {
-  type: "exnihilosequentia:sifting",
-  input: {
-    item: "minecraft:gravel"
-  },
-  result: {
-    item: "exnihilosequentia:copper_pieces"
-  },
-  rolls: [
-    {
-      chance: 0.075,
-      mesh: "flint"
-    },
-    {
-      chance: 0.1,
-      mesh: "iron"
-    },
-    {
-      chance: 0.15,
-      mesh: "diamond"
-    },
-    {
-      chance: 0.25,
-      mesh: "emerald"
-    }
-  ],
-  waterlogged: false
-});
+addSifting("sifting/ens_copper_pieces_gravel", <item:minecraft:gravel>, <item:exnihilosequentia:copper_pieces>, [
+  siftingRoll("flint", 0.075),
+  siftingRoll("iron", 0.1),
+  siftingRoll("diamond", 0.15),
+  siftingRoll("emerald", 0.25),
+]);
 
 // these materials are not available from siftiing:
 recipes.removeByRegex("exnihilosequentia:sifting/ens_\\w*_sapling");  //all saplings
 recipes.removeByRegex("exnihilosequentia:sifting/ens_\\w*_spores?");  //all spores
 recipes.removeByName("exnihilosequentia:sifting/ens_sugar_cane");
-recipes.removeByName("exnihilosequentia:sifting/ens_grass_seeds");
+recipes.removeByName("exnihilosequentia:sifting/ens_seed_grass");
 recipes.removeByName("exnihilosequentia:sifting/ens_pebble_end_stone");
 recipes.removeByName("exnihilosequentia:sifting/ens_ender_pearl");
 recipes.removeByName("exnihilosequentia:sifting/ens_chorus_flower");

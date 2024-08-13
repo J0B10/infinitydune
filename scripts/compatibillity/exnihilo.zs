@@ -16,3 +16,21 @@ public function addCrookHarvest(name as string, input as IIngredient, output as 
     "results": results as IData[],
   });
 }
+
+public function addSifting(name as string, input as IIngredient, output as IItemStack, rolls as IData) as void {
+  <recipetype:exnihilosequentia:sifting>.addJsonRecipe(name, {
+    "type": "exnihilosequentia:sifting",
+    "input": input as IData,
+    "result": output as IData,
+    "rolls": rolls,
+    waterlogged: false
+  });
+}
+
+public function siftingRoll(mesh as string, chance as float) as IData {
+  return {
+      "chance": chance,
+      "mesh": mesh,
+    };
+}
+
