@@ -2,43 +2,13 @@
 /////////////////////////////////////////////////////////////////////
 
 //Dead Bush -> Sappling
-recipes.addJsonRecipe("pure_daisy/sapling", {
-  type: "botania:pure_daisy",
-  input: {
-    type: "block",
-    block: "minecraft:dead_bush"
-  },
-  output: {
-    name: "minecraft:acacia_sapling"
-  },
-  time: 40,
-});
+addPureDaisyRecipe("pure_daisy/sapling", <block:minecraft:dead_bush>, <block:minecraft:acacia_sapling>, 40);
 
 //Sand -> Dirt
-recipes.addJsonRecipe("pure_daisy/dirt", {
-  type: "botania:pure_daisy",
-  input: {
-    type: "block",
-    block: "minecraft:sand"
-  },
-  output: {
-    name: "minecraft:dirt"
-  },
-  time: 240,
-});
+addPureDaisyRecipe("pure_daisy/dirt", <block:minecraft:sand>, <block:minecraft:dirt>, 240);
 
 //Dirt -> Grass
-recipes.addJsonRecipe("pure_daisy/grass", {
-  type: "botania:pure_daisy",
-  input: { 
-    type: "block", 
-    block: "minecraft:dirt"
-  },
-  output: { 
-    name: "minecraft:grass_block"
-  },
-  time: 1000,
-});
+addPureDaisyRecipe("pure_daisy/grass", <block:minecraft:dirt>, <block:minecraft:grass_block>, 1000);
 
 //                          Disabled Items
 /////////////////////////////////////////////////////////////////////
