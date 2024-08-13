@@ -10,3 +10,9 @@ public function disable(input as IItemStack) as void {
     GenericRecipesManager.INSTANCE.removeByInput(input);
     Jei.hideIngredient(input);
 }
+
+public function disableMod(modId as string) as void {
+    GenericRecipesManager.INSTANCE.removeByModid(modId);
+    Jei.hideModIngredients(modId);
+    loot.modifiers.removeByModId(modId);
+}
