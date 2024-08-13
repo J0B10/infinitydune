@@ -34,23 +34,10 @@ craftingTable.addShapedMirrored("crafting/bone_crook", MirrorAxis.HORIZONTAL, <i
 ]);
 
 // dead bushes can be farmed with crooks (earlygame shear replacement)
-recipes.addJsonRecipe("harvest/dead_bush", {
-  type: "exnihilosequentia:harvest",
-  input: { 
-    item: "minecraft:dead_bush" 
-  },
-  results: [
-    {
-      chance: 0.1, 
-      item: "minecraft:dead_bush"
-    },
-    {
-      chance: 0.001, 
-      item: "minecraft:stick" 
-    },
-  ],
-});
-
+addCrookHarvest("harvest/dead_bush", <item:minecraft:dead_bush>, [
+  <item:minecraft:dead_bush> % 0.1, 
+  <item:minecraft:stick> % 0.001,
+]);
 
 //                          Sifting
 /////////////////////////////////////////////////////////////////////
