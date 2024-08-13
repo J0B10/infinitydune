@@ -1,5 +1,9 @@
 import crafttweaker.api.recipe.MirrorAxis;
 
+val sifting = <recipetype:exnihilosequentia:sifting>;
+val precipitate = <recipetype:exnihilosequentia:precipitate>;
+val transition = <recipetype:exnihilosequentia:transition>;
+
 //                          Crook
 /////////////////////////////////////////////////////////////////////
 
@@ -22,12 +26,12 @@ import crafttweaker.api.recipe.MirrorAxis;
 
 
 //cheaper crook recipes for the beginning
-recipes.remove(<item:exnihilosequentia:wooden_crook>);
+craftingTable.remove(<item:exnihilosequentia:wooden_crook>);
 craftingTable.addShapedMirrored("crafting/wooden_crook", MirrorAxis.HORIZONTAL, <item:exnihilosequentia:wooden_crook>, [
     [<item:minecraft:stick>, <item:minecraft:stick>],
     [<item:minecraft:air>, <item:minecraft:stick>],
 ]);
-recipes.remove(<item:exnihilosequentia:bone_crook>);
+craftingTable.remove(<item:exnihilosequentia:bone_crook>);
 craftingTable.addShapedMirrored("crafting/bone_crook", MirrorAxis.HORIZONTAL, <item:exnihilosequentia:bone_crook>, [
     [<item:minecraft:bone>, <item:minecraft:bone>],
     [<item:minecraft:air>, <item:minecraft:bone>],
@@ -43,14 +47,14 @@ addCrookHarvest("harvest/dead_bush", <item:minecraft:dead_bush>, [
 /////////////////////////////////////////////////////////////////////
 
 // bambo comes from sand instead of dirt 
-recipes.removeByName("exnihilosequentia:sifting/ens_bamboo");
+sifting.removeByName("exnihilosequentia:sifting/ens_bamboo");
 addSifting("sifting/ens_bamboo", <item:minecraft:sand>, <item:minecraft:bamboo>, [
   siftingRoll("flint", 0.05),
 ]);
 
 // glowstone and redstone may be sifted with flint mesh
-recipes.removeByName("exnihilosequentia:sifting/ens_redstone");
-recipes.removeByName("exnihilosequentia:sifting/ens_glowstone");
+sifting.removeByName("exnihilosequentia:sifting/ens_redstone");
+sifting.removeByName("exnihilosequentia:sifting/ens_glowstone");
 addSifting("sifting/ens_redstone", <item:exnihilosequentia:dust>, <item:minecraft:redstone>, [
   siftingRoll("flint", 0.125),
   siftingRoll("iron", 0.175),
@@ -62,7 +66,7 @@ addSifting("sifting/ens_glowstone", <item:exnihilosequentia:dust>, <item:minecra
 ]);
 
 // higher drop chances for copper
-recipes.removeByName("exnihilosequentia:sifting/ens_copper_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_copper_pieces_gravel");
 addSifting("sifting/ens_copper_pieces_gravel", <item:minecraft:gravel>, <item:exnihilosequentia:copper_pieces>, [
   siftingRoll("flint", 0.075),
   siftingRoll("iron", 0.1),
@@ -71,53 +75,53 @@ addSifting("sifting/ens_copper_pieces_gravel", <item:minecraft:gravel>, <item:ex
 ]);
 
 // these materials are not available from siftiing:
-recipes.removeByRegex("exnihilosequentia:sifting/ens_\\w*_sapling");  //all saplings
-recipes.removeByRegex("exnihilosequentia:sifting/ens_\\w*_spores?");  //all spores
-recipes.removeByName("exnihilosequentia:sifting/ens_sugar_cane");
-recipes.removeByName("exnihilosequentia:sifting/ens_seed_grass");
-recipes.removeByName("exnihilosequentia:sifting/ens_pebble_end_stone");
-recipes.removeByName("exnihilosequentia:sifting/ens_ender_pearl");
-recipes.removeByName("exnihilosequentia:sifting/ens_chorus_flower");
-recipes.removeByName("exnihilosequentia:sifting/ens_ghast_tear");
-recipes.removeByName("exnihilosequentia:sifting/ens_netherite_scrap");
-recipes.removeByName("exnihilosequentia:sifting/ens_nether_wart");
-recipes.removeByName("exnihilosequentia:sifting/ens_pebble_netherrack");
+sifting.removeByRegex("exnihilosequentia:sifting/ens_\\w*_sapling");  //all saplings
+sifting.removeByRegex("exnihilosequentia:sifting/ens_\\w*_spores?");  //all spores
+sifting.removeByName("exnihilosequentia:sifting/ens_sugar_cane");
+sifting.removeByName("exnihilosequentia:sifting/ens_seed_grass");
+sifting.removeByName("exnihilosequentia:sifting/ens_pebble_end_stone");
+sifting.removeByName("exnihilosequentia:sifting/ens_ender_pearl");
+sifting.removeByName("exnihilosequentia:sifting/ens_chorus_flower");
+sifting.removeByName("exnihilosequentia:sifting/ens_ghast_tear");
+sifting.removeByName("exnihilosequentia:sifting/ens_netherite_scrap");
+sifting.removeByName("exnihilosequentia:sifting/ens_nether_wart");
+sifting.removeByName("exnihilosequentia:sifting/ens_pebble_netherrack");
 
 // unlocked in later ages:
-recipes.removeByName("exnihilosequentia:sifting/ens_platinum_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_uranium_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_lead_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_iron_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_iron_pieces_sand");
-recipes.removeByName("exnihilosequentia:sifting/ens_gold_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_gold_pieces_crushed_netherrack");
-recipes.removeByName("exnihilosequentia:sifting/ens_silver_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_zinc_pieces_gravel");
-recipes.removeByName("exnihilosequentia:sifting/ens_nickel_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_platinum_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_uranium_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_lead_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_iron_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_iron_pieces_sand");
+sifting.removeByName("exnihilosequentia:sifting/ens_gold_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_gold_pieces_crushed_netherrack");
+sifting.removeByName("exnihilosequentia:sifting/ens_silver_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_zinc_pieces_gravel");
+sifting.removeByName("exnihilosequentia:sifting/ens_nickel_pieces_gravel");
 
-recipes.removeByName("exnihilosequentia:sifting/ens_lapis_lazuli");
-recipes.removeByName("exnihilosequentia:sifting/ens_diamond");
-recipes.removeByName("exnihilosequentia:sifting/ens_emerald");
-recipes.removeByName("exnihilosequentia:sifting/ens_blaze_powder");
-recipes.removeByName("exnihilosequentia:sifting/ens_quartz");
+sifting.removeByName("exnihilosequentia:sifting/ens_lapis_lazuli");
+sifting.removeByName("exnihilosequentia:sifting/ens_diamond");
+sifting.removeByName("exnihilosequentia:sifting/ens_emerald");
+sifting.removeByName("exnihilosequentia:sifting/ens_blaze_powder");
+sifting.removeByName("exnihilosequentia:sifting/ens_quartz");
 
 //                             Barrel
 /////////////////////////////////////////////////////////////////////
 
 // remove recipes using witchwater
-recipes.removeByName("exnihilosequentia:precipitate/ens_red_mushroom");
-recipes.removeByName("exnihilosequentia:precipitate/ens_slime");
-recipes.removeByName("exnihilosequentia:precipitate/ens_soul_soil");
-recipes.removeByName("exnihilosequentia:precipitate/ens_soul_sand");
-recipes.removeByName("exnihilosequentia:transition/ens_witch_water");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_red_mushroom");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_slime");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_soul_soil");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_soul_sand");
+transition.removeByName("exnihilosequentia:transition/ens_witch_water");
 
 // do not allow creation of stones from other dimensions: 
-recipes.removeByName("exnihilosequentia:precipitate/ens_netherrack");
-recipes.removeByName("exnihilosequentia:precipitate/ens_end_stone");
-recipes.removeByName("exnihilosequentia:precipitate/ens_brown_mushroom");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_netherrack");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_end_stone");
+precipitate.removeByName("exnihilosequentia:precipitate/ens_brown_mushroom");
 
 // unlocked in later age:
-recipes.removeByName("exnihilosequentia:transition/ens_sea_water");
+transition.removeByName("exnihilosequentia:transition/ens_sea_water");
 
 
 //                          Disabled Items
