@@ -3,6 +3,24 @@ import crafttweaker.api.recipe.MirrorAxis;
 //                          Crook
 /////////////////////////////////////////////////////////////////////
 
+//extra damage (but reduced speed) for wooden crook - serves as wooden sword replacement
+<item:exnihilosequentia:wooden_crook>.addGlobalAttributeModifier(
+  <attribute:minecraft:generic.attack_damage>, "CB3F55D3-645C-4F38-A497-9C13A33DB5CF", "Attack Damage", 
+  3, <constant:minecraft:attribute/operation:addition>, [<constant:minecraft:equipmentslot:mainhand>]);
+<item:exnihilosequentia:wooden_crook>.addGlobalAttributeModifier(
+  <attribute:minecraft:generic.attack_speed>, "FA233E1C-4180-4865-B01B-BCCE9785ACA3", "Attack Speed", 
+  2.0, <constant:minecraft:attribute/operation:addition>, [<constant:minecraft:equipmentslot:mainhand>]);
+
+
+//extra damage (but reduced speed) for bone crook - serves as stone sword replacement
+<item:exnihilosequentia:bone_crook>.addGlobalAttributeModifier(
+  <attribute:minecraft:generic.attack_damage>, "CB3F55D3-645C-4F38-A497-9C13A33DB5CF", "Attack Damage", 
+  4, <constant:minecraft:attribute/operation:addition>, [<constant:minecraft:equipmentslot:mainhand>]);
+<item:exnihilosequentia:bone_crook>.addGlobalAttributeModifier(
+  <attribute:minecraft:generic.attack_speed>, "FA233E1C-4180-4865-B01B-BCCE9785ACA3", "Attack Speed", 
+  2.0, <constant:minecraft:attribute/operation:addition>, [<constant:minecraft:equipmentslot:mainhand>]);
+
+
 //cheaper crook recipes for the beginning
 recipes.remove(<item:exnihilosequentia:wooden_crook>);
 craftingTable.addShapedMirrored("crafting/wooden_crook", MirrorAxis.HORIZONTAL, <item:exnihilosequentia:wooden_crook>, [
