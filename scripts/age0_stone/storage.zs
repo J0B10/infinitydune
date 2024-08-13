@@ -10,6 +10,26 @@ craftingTable.addShaped("crafting/wood_chest", <item:expandedstorage:wood_chest>
 craftingTable.addShapeless("crafting/vanilla_chest", <item:minecraft:chest>, [<item:expandedstorage:wood_chest>]);
 craftingTable.addShapeless("crafting/vanilla_chest_revert", <item:expandedstorage:wood_chest>, [<item:minecraft:chest>]);
 
+// make silly chest variants cheaper to encourage their use
+craftingTable.removeByName("expandedstorage:bamboo_chest");
+craftingTable.addShaped("crafting/bamboo_chest", <item:expandedstorage:bamboo_chest> * 4, [
+    [<item:minecraft:bamboo_block>, <item:minecraft:bamboo_block>, <item:minecraft:bamboo_block>],
+    [<item:minecraft:bamboo_block>, <item:minecraft:air>, <item:minecraft:bamboo_block>],
+    [<item:minecraft:bamboo_block>, <item:minecraft:bamboo_block>, <item:minecraft:bamboo_block>]
+]);
+craftingTable.removeByName("expandedstorage:moss_chest");
+craftingTable.addShaped("crafting/moss_chest", <item:expandedstorage:moss_chest>, [
+    [<item:minecraft:moss_block>, <item:minecraft:moss_block>, <item:minecraft:moss_block>],
+    [<item:minecraft:moss_block>, <item:minecraft:air>, <item:minecraft:moss_block>],
+    [<item:minecraft:moss_block>, <item:minecraft:moss_block>, <item:minecraft:moss_block>]
+]);
+craftingTable.removeByName("expandedstorage:pumpkin_chest");
+craftingTable.addShaped("crafting/pumpkin_chest", <item:expandedstorage:pumpkin_chest> * 4, [
+    [<item:minecraft:pumpkin>, <item:minecraft:pumpkin>, <item:minecraft:pumpkin>],
+    [<item:minecraft:pumpkin>, <item:minecraft:air>, <item:minecraft:pumpkin>],
+    [<item:minecraft:pumpkin>, <item:minecraft:pumpkin>, <item:minecraft:pumpkin>]
+]);
+
 // disable old chest models for simplicity
 disable(<item:expandedstorage:old_wood_chest>);
 disable(<item:expandedstorage:old_iron_chest>);
