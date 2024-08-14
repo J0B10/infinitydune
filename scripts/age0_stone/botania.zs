@@ -19,3 +19,45 @@ disable(<item:botania:root>);
 disable(<item:botania:pebble>);
 <tag:blocks:gardenofglass:pebble_sources>.clear();
 
+//             Fill water bowl in Fired Crucible
+/////////////////////////////////////////////////////////////////////
+import mods.jeitweaker.Jei;
+import crafttweaker.api.text.Component;
+import crafttweaker.forge.api.event.interact.RightClickBlockEvent;
+
+val waterBowl = <item:botania:water_bowl>.withTag({Fluid: {FluidName: "minecraft:water", Amount: 1000}});
+
+Jei.addIngredientInformation(<item:botania:water_bowl>, Component.literal("Bowls may hold 1000mb of water." 
+    + "\n\nThey can be filled at water sources or the Fired Crucible."));
+
+
+events.register<RightClickBlockEvent>((event) => {
+    val item = event.itemStack;
+    if (!<item:minecraft:bowl>.matches(item)) {
+        return;
+    }
+    val world = event.entity.commandSenderWorld;
+    val state = world.getBlockState(event.blockPos);
+    if (<blockstate:exnihilosequentia:fired_crucible> != state) {
+        return;
+    }
+    val blockEntity = world.getBlockEntity(event.blockPos);
+    val data = blockEntity.data;
+    if (data["tank"]["FluidName"] != "minecraft:water") {
+        return;
+    }
+    val amount = data["tank"]["Amount"];
+    if (amount < 1000) {
+        return;
+    }
+    data["tank"]["Amount"] = amount - 1000;
+    print(data.asString());
+    blockEntity.updateData(data);
+    print(blockEntity.data.asString());
+    if (item.amount > 1) {
+        event.entity.setItemInHand(<constant:minecraft:interactionhand:main_hand>, item.copy().shrink(1));
+        event.entity.addItem(waterBowl.copy());
+    } else {
+        event.entity.setItemInHand(<constant:minecraft:interactionhand:main_hand>, waterBowl.copy());
+    }
+});
