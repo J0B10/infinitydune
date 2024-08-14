@@ -26,3 +26,9 @@ addRunicAltar("runic_altar/winter", <item:botania:rune_winter>, 12000, [
     <item:botania:rune_water>, <item:botania:rune_earth>, <tag:items:forge:ingots/manasteel>,
     <item:minecraft:snow_block>, <item:minecraft:packed_ice>, <item:bloodmagic:reinforcedslate>
 ]);
+
+runic_altar.removeByName("botania:runic_altar/mana");
+addRunicAltar("runic_altar/mana", <item:botania:rune_mana>, 9000, [
+    <tag:items:forge:dusts/mana>, <item:botania:manaweave_cloth>, <tag:items:forge:storage_blocks/manasteel>,
+    <item:botania:mana_bottle>, <item:botania:mana_pearl>, <item:bloodmagic:infusedslate>
+]);
