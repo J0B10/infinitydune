@@ -14,23 +14,8 @@ addPureDaisyRecipe("pure_daisy/grass", <block:minecraft:dirt>, <block:minecraft:
 /////////////////////////////////////////////////////////////////////
 disable(<item:botania:living_root>);
 disable(<item:botania:root>);
-disable(<item:botania:pebble>);
-
-
-//                    Delete any created pebbles
-/////////////////////////////////////////////////////////////////////
-import crafttweaker.forge.api.event.entity.EntityJoinLevelEvent;
-import crafttweaker.api.entity.type.item.ItemEntity;
-import crafttweaker.api.item.IItemStack;
-import mods.jeitweaker.Jei;
 
 //pebbles are not allowed to exist
-events.register<EntityJoinLevelEvent>((event) => {
-    if (event.entity.type == <entitytype:minecraft:item>) {
-        val entity = event.entity as ItemEntity ;
-        if (entity.item.matches(<item:botania:pebble>)) {
-            event.cancel();
-        }
-    }
-});
+disable(<item:botania:pebble>);
+<tag:blocks:gardenofglass:pebble_sources>.clear();
 
