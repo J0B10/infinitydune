@@ -48,31 +48,31 @@ addCrookHarvest("harvest/dead_bush", <item:minecraft:dead_bush>, [
 
 // bambo comes from sand instead of dirt 
 sifting.removeByName("exnihilosequentia:sifting/ens_bamboo");
-addSifting("sifting/ens_bamboo", <item:minecraft:sand>, <item:minecraft:bamboo>, [
-  siftingRoll("flint", 0.05),
-]);
+addSifting("sifting/ens_bamboo", <item:minecraft:sand>, <item:minecraft:bamboo>, {
+  "flint": 0.05,
+});
 
 // glowstone and redstone may be sifted with flint mesh
 sifting.removeByName("exnihilosequentia:sifting/ens_redstone");
 sifting.removeByName("exnihilosequentia:sifting/ens_glowstone");
-addSifting("sifting/ens_redstone", <item:exnihilosequentia:dust>, <item:minecraft:redstone>, [
-  siftingRoll("flint", 0.125),
-  siftingRoll("iron", 0.175),
-  siftingRoll("diamond", 0.25),
-]);
-addSifting("sifting/ens_glowstone", <item:exnihilosequentia:dust>, <item:minecraft:glowstone_dust>, [
-  siftingRoll("flint", 0.5),
-  siftingRoll("iron", 0.0625),
-]);
+addSifting("sifting/ens_redstone", <item:exnihilosequentia:dust>, <item:minecraft:redstone>, {
+  "flint": 0.125,
+  "iron": 0.175,
+  "diamond": 0.25,
+});
+addSifting("sifting/ens_glowstone", <item:exnihilosequentia:dust>, <item:minecraft:glowstone_dust>, {
+  "flint": 0.5,
+  "iron": 0.0625,
+});
 
 // higher drop chances for copper
 sifting.removeByName("exnihilosequentia:sifting/ens_copper_pieces_gravel");
-addSifting("sifting/ens_copper_pieces_gravel", <item:minecraft:gravel>, <item:exnihilosequentia:copper_pieces>, [
-  siftingRoll("flint", 0.075),
-  siftingRoll("iron", 0.1),
-  siftingRoll("diamond", 0.15),
-  siftingRoll("emerald", 0.25),
-]);
+addSifting("sifting/ens_copper_pieces_gravel", <item:minecraft:gravel>, <item:exnihilosequentia:copper_pieces>, {
+  "flint": 0.075,
+  "iron": 0.1,
+  "diamond": 0.15,
+  "emerald": 0.25,
+});
 
 // these materials are not available from siftiing:
 sifting.removeByRegex("exnihilosequentia:sifting/ens_\\w*_sapling");  //all saplings
