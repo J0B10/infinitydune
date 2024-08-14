@@ -48,7 +48,7 @@ craftingTable.addShaped("crafting/void_upgrade", <item:storagedrawers:void_upgra
 
 craftingTable.removeByName("storagedrawers:obsidian_storage_upgrade");
 craftingTable.addShaped("crafting/obsidian_storage_upgrade", <item:storagedrawers:obsidian_storage_upgrade>, [
-    [<item:minecraft:stick>, <item:minecraft:stick>, <item:minecraft:stick>],
+    [<item:minecraft:deepslate>, <item:minecraft:deepslate>, <item:minecraft:deepslate>],
     [<item:minecraft:deepslate>, <item:storagedrawers:upgrade_template>, <item:minecraft:deepslate>],
-    [<item:minecraft:stick>, <item:minecraft:stick>, <item:minecraft:stick>]
+    [<item:minecraft:deepslate>, <item:minecraft:deepslate>, <item:minecraft:deepslate>]
 ]);
