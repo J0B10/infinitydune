@@ -1,5 +1,7 @@
 import crafttweaker.api.recipe.MirrorAxis;
 
+val runic_altar = <recipetype:botania:runic_altar>;
+
 //Cocoon of Caprice
 craftingTable.removeByName("botania:cocoon");
 craftingTable.addShaped("crafting/cocoon_1", <item:botania:cocoon>, [
@@ -61,4 +63,33 @@ craftingTable.addShapedMirrored("crafting/water_rod", MirrorAxis.HORIZONTAL, <it
     [<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:water_bucket>],
     [<item:minecraft:air>, <item:botania:livingwood_twig>, <item:minecraft:air>],
     [<item:botania:rune_water>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
+//                          Runes
+/////////////////////////////////////////////////////////////////////
+
+runic_altar.removeByName("botania:runic_altar/fire");
+addRunicAltar("runic_altar/fire", <item:botania:rune_fire> * 2, 7000, [
+    <tag:items:botania:mana_dusts>, <item:botania:mana_string>, <item:minecraft:magma_block>, 
+    <tag:items:forge:dusts/glowstone>, <item:minecraft:campfire>, <item:bloodmagic:blankslate>, 
+]);
+
+val waterBottle = <item:minecraft:potion>.withTag({Potion: "minecraft:water"});
+runic_altar.removeByName("botania:runic_altar/water");
+addRunicAltar("runic_altar/water", <item:botania:rune_water> * 2, 7000, [
+    <tag:items:botania:mana_dusts>, <item:botania:mana_string>, <tag:items:minecraft:bamboo_blocks>, 
+    <item:minecraft:blue_dye>, waterBottle, <item:bloodmagic:blankslate>, 
+]);
+
+val mushroom = <item:minecraft:brown_mushroom> | <item:minecraft:red_mushroom>;
+runic_altar.removeByName("botania:runic_altar/earth");
+addRunicAltar("runic_altar/earth", <item:botania:rune_earth> * 2, 7000, [
+    <tag:items:botania:mana_dusts>, <item:botania:mana_string>, <tag:items:forge:storage_blocks/raw_copper>, 
+    <tag:items:forge:dusts/redstone>, mushroom, <item:bloodmagic:blankslate>, 
+]);
+
+runic_altar.removeByName("botania:runic_altar/air");
+addRunicAltar("runic_altar/air", <item:botania:rune_air> * 2, 7000, [
+    <tag:items:botania:mana_dusts>, <item:botania:mana_string>, <item:minecraft:white_carpet>, 
+    <tag:items:forge:gunpowder>, <tag:items:forge:feathers>, <item:bloodmagic:blankslate>, 
 ]);
