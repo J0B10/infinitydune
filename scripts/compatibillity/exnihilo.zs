@@ -5,19 +5,18 @@ import crafttweaker.api.data.IData;
 import crafttweaker.api.util.random.Percentaged;
 
 public function addCrookHarvest(name as string, input as IIngredient, output as Percentaged<IItemStack>[]) as void {
-  var results = new stdlib.List<IData>();
-  for weighted in output {
-    var data = (weighted.getData() as IData).merge({"chance" : weighted.getPercentage()});
-    results.add(data);
-  }
+  var results = new IData[](output.length, (i) => {
+    return (output[i].getData() as IData).merge({"chance" : output[i].getPercentage()});
+  });
   <recipetype:exnihilosequentia:harvest>.addJsonRecipe(name, {
     "type": "exnihilosequentia:harvest",
     "input": input as IData,
-    "results": results as IData[],
+    "results": results,
   });
 }
 
 public function addSifting(name as string, input as IIngredient, output as IItemStack, rolls as IData) as void {
+  
   <recipetype:exnihilosequentia:sifting>.addJsonRecipe(name, {
     "type": "exnihilosequentia:sifting",
     "input": input as IData,
