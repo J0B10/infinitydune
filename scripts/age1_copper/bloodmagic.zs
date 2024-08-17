@@ -1,3 +1,5 @@
+import crafttweaker.api.ingredient.IIngredient;
+
 val bloodAltar = <recipetype:bloodmagic:altar>;
 
 //                         Blood Orbs
@@ -73,6 +75,13 @@ addBloodAltar("blood_altar/daggerofsacrifice", 2, weathered_copper_sword, <item:
     drainRate: 12,
 });
 
+// hellfire forge is made from tin, rune of fire, mana dust and blank runes
+craftingTable.removeByName("bloodmagic:soul_forge");
+craftingTable.addShaped("crafting/soul_forge", <item:bloodmagic:soulforge>, [
+    [<tag:items:forge:dusts/mana>, <item:minecraft:air>, <tag:items:forge:dusts/mana>],
+    [<item:bloodmagic:blankrune>, <item:botania:rune_fire>, <item:bloodmagic:blankrune>],
+    [<item:bloodmagic:blankrune>, <tag:items:forge:storage_blocks/tin>, <item:bloodmagic:blankrune>],
+]);
 
 //                          Disabled Items
 /////////////////////////////////////////////////////////////////////
