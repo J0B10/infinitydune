@@ -4,9 +4,123 @@
       "type": "minecraft:noise",
       "settings": "minecraft:overworld",
       "biome_source": {
-        "type": "minecraft:fixed",
-        "biome": "minecraft:desert"
+        "type": "minecraft:multi_noise",
+        "biomes": [
+          {
+            "biome": "minecraft:desert",
+            "parameters": {
+              "temperature": [
+                -1,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": 0,
+              "offset": 0
+            }
+          },       
+          {
+            "biome": "minecraft:dripstone_caves",
+            "parameters": {
+              "temperature": [
+                -1,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                0.7,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": [
+                0.3,
+                0.9
+              ],
+              "offset": 0
+            }
+          },
+          {
+            "biome": "minecraft:lush_caves",
+            "parameters": {
+              "temperature": [
+                -1,
+                1
+              ],
+              "humidity": [
+                0.8,
+                1
+              ],
+              "continentalness": [
+                -1,
+                1
+              ],
+              "erosion": [
+                -1,
+                1
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": [
+                0.55,
+                0.9
+              ],
+              "offset": 0
+            }
+          },
+          {
+            "biome": "minecraft:deep_dark",
+            "parameters": {
+              "temperature": [
+                -1,
+                1
+              ],
+              "humidity": [
+                -1,
+                1
+              ],
+              "continentalness": [
+                -1,
+                1
+              ],
+              "erosion": [
+                -1,
+                -0.9
+              ],
+              "weirdness": [
+                -1,
+                1
+              ],
+              "depth": 1.1,
+              "offset": 0
+            }
+          }
+        ]
       }
     }
   }
-  
