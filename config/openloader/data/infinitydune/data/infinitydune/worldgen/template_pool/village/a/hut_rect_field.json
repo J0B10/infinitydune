@@ -1,0 +1,68 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/hut_rect_1",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 4
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/hut_rect_2",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 4
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/hut_rect_3",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 4
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/field_rect_coffee",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 3
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/field_rect_tomato",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 3
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/field_rect_wheat",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 3
+        },
+        {
+            "element": {
+                "element_type": "minecraft:single_pool_element",
+                "location": "infinitydune:village/a/field_rect_pumpkin",
+                "processors": [],
+                "projection": "rigid"
+            },
+            "weight": 3
+        }
+    ],
+    "fallback": "minecraft:empty"
+}

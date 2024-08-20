@@ -1,0 +1,32 @@
+{
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "infinitydune:village/a/hut_rect_1",
+          "processors": [],
+          "projection": "rigid"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "infinitydune:village/a/hut_rect_2",
+          "processors": [],
+          "projection": "rigid"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "infinitydune:village/a/hut_rect_3",
+          "processors": [],
+          "projection": "rigid"
+        },
+        "weight": 1
+      }
+    ],
+    "fallback": "minecraft:empty"
+}
