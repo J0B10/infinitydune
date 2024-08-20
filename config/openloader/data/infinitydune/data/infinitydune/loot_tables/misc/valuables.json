@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:experience_bottle",
+            "weight": 2,         
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 3.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:copper_ingot",
+            "weight": 2,                
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 3.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "exnihilosequentia:tin_ingot",
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 3.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "exnihilosequentia:aluminum_ingot",
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 3.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "create:zinc_ingot",
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 3.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:mana_pearl",
+            "weight": 0.7
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:black_lotus"
+          }
+        ],
+        "rolls": {
+          "type": "minecraft:constant",
+          "value": 1
+        }
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_desert_house"
+  }
+  

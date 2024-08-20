@@ -1,0 +1,125 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_boots",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_leggings",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_chestplate",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_helmet",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_sword",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_pickaxe",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_axe",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "purecoppertools:exposed_copper_shovel",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "delightful:bone_knife",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:saddle",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "functions": [   
+                {
+                    "add": true,
+                    "count": {
+                    "type": "minecraft:uniform",
+                    "max": 5,
+                    "min": 1
+                    },
+                    "function": "minecraft:set_count"
+                }
+            ]
+          }
+        ],
+        "rolls": {
+          "type": "minecraft:constant",
+          "value": 1
+        }
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_desert_house"
+  }

@@ -1,0 +1,106 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_wool",
+            "weight": 2,
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:yellow_wool",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:orange_wool",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:purple_wool",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:purple_wool",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:light_gray_wool",
+            "functions": [
+              {
+                "add": false,
+                "count": {
+                  "type": "minecraft:uniform",
+                  "max": 4.0,
+                  "min": 1.0
+                },
+                "function": "minecraft:set_count"
+              }
+            ]
+          }
+        ],
+        "rolls": {
+          "type": "minecraft:constant",
+          "value": 1
+        }
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_desert_house"
+  }

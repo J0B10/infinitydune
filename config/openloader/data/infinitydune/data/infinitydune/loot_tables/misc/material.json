@@ -1,0 +1,76 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:oak_planks",
+                "functions": [
+                  {
+                    "add": true,
+                    "count": {
+                        "type": "minecraft:uniform",
+                        "max": 12.0,
+                        "min": 4.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:stick",
+                "functions": [
+                  {
+                    "add": true,
+                    "count": {
+                        "type": "minecraft:uniform",
+                        "max": 8.0,
+                        "min": 3.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:paper",
+                "functions": [
+                  {
+                    "add": true,
+                    "count": {
+                        "type": "minecraft:uniform",
+                        "max": 8.0,
+                        "min": 3.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:torch",
+                "functions": [
+                  {
+                    "add": true,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 6.0,
+                      "min": 4.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+                ]
+            }
+        ],
+        "rolls": {
+            "type": "minecraft:constant",
+            "value": 1
+        }
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_desert_house"
+}
+  
