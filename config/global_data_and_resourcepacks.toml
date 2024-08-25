@@ -13,15 +13,14 @@ enable_system_global_packs = false
 [resourcepacks]
 required = [
     #"other_folder/random_pack.zip" # You can also point at specific files!
-    "global_packs/required_resources/"
+    "resources/"
 ]
 
 [datapacks]
 required = [
-    "resourcepacks/",
-    "global_packs/required_data/"
+    "datapacks/"
 ]
 
 optional = [
-    "global_packs/optional_data/"
+
 ]

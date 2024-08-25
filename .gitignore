@@ -20,6 +20,10 @@ scripts/examples
 !resources
 !resources/**
 
+# except datapacks
+!datapacks
+!datapacks/**
+
 # except config files
 !config
 !config/**
