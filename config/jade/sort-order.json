@@ -63,5 +63,6 @@
   "minecraft:tnt_stability": null,
   "minecraft:total_enchantment_power": null,
   "minecraft:villager_profession": null,
-  "minecraft:zombie_villager": null
+  "minecraft:zombie_villager": null,
+  "storagedrawers:main": null
 }
