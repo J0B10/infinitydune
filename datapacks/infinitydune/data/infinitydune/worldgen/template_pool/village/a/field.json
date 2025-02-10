@@ -12,6 +12,15 @@
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
+          "location": "infinitydune:village/a/field_rect_onion",
+          "processors": [],
+          "projection": "rigid"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
           "location": "infinitydune:village/a/field_rect_tomato",
           "processors": [],
           "projection": "rigid"
