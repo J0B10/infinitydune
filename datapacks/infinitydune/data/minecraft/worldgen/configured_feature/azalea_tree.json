@@ -60,8 +60,8 @@
       "foliage_placer": {
         "type": "minecraft:bush_foliage_placer",
         "radius": 1,
-        "offset": 0,
-        "height": 2
+        "offset": 1,
+        "height": 1
       },
       "decorators": []
     }
