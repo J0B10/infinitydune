@@ -38,7 +38,8 @@ import crafttweaker.forge.api.event.interact.RightClickBlockEvent;
 val waterBowl = <item:botania:water_bowl>.withTag({Fluid: {FluidName: "minecraft:water", Amount: 1000}});
 
 Jei.addIngredientInformation(<item:botania:water_bowl>, Component.literal("Bowls may hold 1000mb of water." 
-    + "\n\nThey can be filled at water sources or the Fired Crucible."));
+    + "\n\nThey can be filled at water sources or the Fired Crucible."
+    + "\n\nUseful for filling the Petal Apothecary"));
 
 
 events.register<RightClickBlockEvent>((event) => {
