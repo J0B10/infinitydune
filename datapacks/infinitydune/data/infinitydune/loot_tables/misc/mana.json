@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "botania:mana_pearl"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:mana_bottle",
+            "weight": 0.7
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:mana_powder",
+            "weight": 2,                
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 5.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:mana_string",
+            "weight": 2,                
+            "functions": [
+                {
+                    "add": false,
+                    "count": {
+                      "type": "minecraft:uniform",
+                      "max": 5.0,
+                      "min": 1.0
+                    },
+                    "function": "minecraft:set_count"
+                  }
+            ]
+          }
+        ],
+        "rolls": 1
+      }
+    ],
+    "random_sequence": "minecraft:chests/village/village_desert_house"
+  }
+  
