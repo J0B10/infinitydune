@@ -1,0 +1,24 @@
+{
+  "parent": "infinitydune:age0_stone/wood",
+  "display": {
+    "icon": {
+      "item": "delightful:cactus_flesh"
+    },
+    "title": "It's edible",
+    "description": "Cut a cactus into chunks as food source"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "delightful:cactus_flesh"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

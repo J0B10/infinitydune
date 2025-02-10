@@ -1,0 +1,25 @@
+{
+    "parent": "infinitydune:age0_stone/wood",
+    "display": {
+      "icon": {
+        "item": "botania:water_bowl"
+      },
+      "title": "Wash me but don't get me wet!",
+      "description": "Fill a bowl with water"
+    },
+    "criteria": {
+      "item": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "botania:water_bowl"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  

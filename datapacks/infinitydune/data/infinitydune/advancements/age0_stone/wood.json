@@ -1,0 +1,36 @@
+{
+  "parent": "infinitydune:age0_stone/daisy",
+  "display": {
+    "icon": {
+      "item": "minecraft:acacia_sapling"
+    },
+    "title": "Greenification",
+    "description": "Plant a tree in the desert"
+  },
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:acacia_sapling"
+      }
+    },
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:acacia_sapling"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block",
+      "item"
+    ]
+  ]
+}

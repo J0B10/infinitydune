@@ -1,0 +1,41 @@
+{
+  "parent": "infinitydune:root",
+  "display": {
+    "icon": {
+      "item": "botania:pure_daisy"
+    },
+    "title": "Desert Daisy",
+    "description": "Find a pure daisy"
+  },
+  "criteria": {
+    "block": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "botania:pure_daisy"
+      }
+    },
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:pure_daisy"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "block",
+      "item"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "infinitydune:advancements/daisy"
+    ]
+  }
+}

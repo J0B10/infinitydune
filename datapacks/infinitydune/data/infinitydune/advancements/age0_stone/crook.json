@@ -1,0 +1,43 @@
+{
+    "parent": "infinitydune:root",
+    "display": {
+      "icon": {
+        "item": "exnihilosequentia:wooden_crook"
+      },
+      "title": "Stick fighting",
+      "description": "Crooks are useful for both harvesting and fighting."
+    },
+    "criteria": {
+      "wooden": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "exnihilosequentia:wooden_crook"
+              ]
+            }
+          ]
+        }
+      },
+      "bone": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "exnihilosequentia:bone_crook"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+      [
+        "wooden",
+        "bone"
+      ]
+    ]
+  }
+  

@@ -1,0 +1,24 @@
+{
+  "parent": "infinitydune:age0_stone/wood",
+  "display": {
+    "icon": {
+      "item": "botania:mana_pool"
+    },
+    "title": "Mahna Mahna",
+    "description": "Craft a Mana Pool and start filling it with mana"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:mana_pool"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

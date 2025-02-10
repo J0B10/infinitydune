@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:sand"
+        },
+        "title": "infinitydune",
+        "description": "Lost in the desert...",
+        "background": "minecraft:textures/block/sand.png"
+    },
+    "criteria": {
+        "item": {
+            "trigger": "minecraft:tick",
+            "conditions": {}
+        }
+    }
+}
