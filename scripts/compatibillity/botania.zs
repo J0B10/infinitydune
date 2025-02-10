@@ -42,3 +42,15 @@ public function addOrechidRecipe(name as string, input as Block, output as Block
     "weight": weight,
   });
 }
+
+public function addApothecaryRecipe(name as string, output as IItemStack, ingredients as IIngredient[]) as void {
+  var list = new IData[](ingredients.length, (i) => ingredients[i] as IData);
+  <recipetype:botania:petal_apothecary>.addJsonRecipe(name, {
+    "type": "botania:petal_apothecary",
+    "ingredients": list,
+    "output": output as IData,
+    "reagent": {
+      "tag": "botania:seed_apothecary_reagent",
+    },
+  });
+}
