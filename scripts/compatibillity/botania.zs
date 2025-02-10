@@ -27,3 +27,18 @@ public function addRunicAltar(name as string, output as IItemStack, mana as int,
     "output": output as IData
   });
 }
+
+public function addOrechidRecipe(name as string, input as Block, output as Block, weight as int) as void {
+  <recipetype:botania:orechid>.addJsonRecipe(name, {
+    "type": "botania:orechid",
+    "input": { 
+      "type": "block", 
+      "block": input.registryName as string
+    },
+    "output": { 
+      "type": "block", 
+      "block": output.registryName as string
+    },
+    "weight": weight,
+  });
+}
