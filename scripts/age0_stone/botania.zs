@@ -1,3 +1,13 @@
+import crafttweaker.api.recipe.MirrorAxis;
+
+// Floral obedience stick should be cheap
+craftingTable.removeByName("botania:obedience_stick");
+craftingTable.addShapedMirrored("crafting/obedience_stick", MirrorAxis.HORIZONTAL, <item:botania:obedience_stick>, [
+    [<item:minecraft:air>, <item:minecraft:air>, <tag:items:botania:mana_dusts>], 
+    [<item:minecraft:air>, <tag:items:botania:livingwood_twig>, <item:minecraft:air>], 
+    [<tag:items:botania:livingwood_twig>, <item:minecraft:air>, <item:minecraft:air>]
+]);
+
 //                          Pure Daisy
 /////////////////////////////////////////////////////////////////////
 
