@@ -83,12 +83,17 @@
           },
           {
             "type": "minecraft:item",
-            "name": "botania:mana_pearl",
+            "name": "minecraft:ender_pearl",
             "weight": 0.7
           },
           {
             "type": "minecraft:item",
             "name": "botania:black_lotus"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "botania:overgrowth_seed",
+            "weight": 0.7
           }
         ],
         "rolls": {
