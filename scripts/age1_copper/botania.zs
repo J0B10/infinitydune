@@ -65,6 +65,18 @@ craftingTable.addShapedMirrored("crafting/water_rod", MirrorAxis.HORIZONTAL, <it
     [<item:botania:rune_water>, <item:minecraft:air>, <item:minecraft:air>]
 ]);
 
+<recipetype:botania:petal_apothecary>.removeByName("botania:petal_apothecary/orechid");
+addApothecaryRecipe("petal_apothecary/orechid", <item:botania:orechid>, [
+    <tag:items:botania:petals/gray>,
+    <item:bloodmagic:reinforcedslate>,
+    <tag:items:botania:petals/yellow>,
+    <item:botania:rune_earth>,
+    <tag:items:botania:petals/green>,
+    <item:botania:redstone_root>,
+    <tag:items:botania:petals/red>,
+    <item:botania:rune_fire>,
+]);
+
 //                          Runes
 /////////////////////////////////////////////////////////////////////
 
@@ -93,3 +105,30 @@ addRunicAltar("runic_altar/air", <item:botania:rune_air> * 2, 7000, [
     <tag:items:botania:mana_dusts>, <item:botania:mana_string>, <item:minecraft:white_carpet>, 
     <tag:items:forge:gunpowder>, <tag:items:forge:feathers>, <item:bloodmagic:blankslate>, 
 ]);
+
+//                          Orechid
+/////////////////////////////////////////////////////////////////////
+<recipetype:botania:orechid>.removeAll();
+addOrechidRecipe("orechid/coal", <block:minecraft:stone>, <block:minecraft:coal_ore>, 420);
+addOrechidRecipe("orechid/deepslate_coal", <block:minecraft:deepslate>, <block:minecraft:deepslate_coal_ore>, 64);
+addOrechidRecipe("orechid/copper", <block:minecraft:stone>, <block:minecraft:copper_ore>, 221);
+addOrechidRecipe("orechid/deepslate_copper", <block:minecraft:deepslate>, <block:minecraft:deepslate_copper_ore>, 110);
+addOrechidRecipe("orechid/redstone", <block:minecraft:stone>, <block:minecraft:redstone_ore>, 60);
+addOrechidRecipe("orechid/deepslate_redstone", <block:minecraft:deepslate>, <block:minecraft:deepslate_redstone_ore>, 130);
+addOrechidRecipe("orechid/tin", <block:minecraft:stone>, <block:thermal:tin_ore>, 76);
+addOrechidRecipe("orechid/deepslate_tin", <block:minecraft:deepslate>, <block:thermal:deepslate_tin_ore>, 64);
+addOrechidRecipe("orechid/zinc", <block:minecraft:stone>, <block:create:zinc_ore>, 76);
+addOrechidRecipe("orechid/deepslate_zinc", <block:minecraft:deepslate>, <block:create:deepslate_zinc_ore>, 64);
+addOrechidRecipe("orechid/aluminum", <block:minecraft:stone>, <block:immersiveengineering:ore_aluminum>, 28);
+addOrechidRecipe("orechid/deepslate_aluminum", <block:minecraft:deepslate>, <block:immersiveengineering:deepslate_ore_aluminum>, 6);
+
+addOrechidRecipe("orechid/silver", <block:minecraft:stone>, <block:thermal:silver_ore>, 32);
+addOrechidRecipe("orechid/deepslate_silver", <block:minecraft:deepslate>, <block:thermal:deepslate_silver_ore>, 73);
+addOrechidRecipe("orechid/iron", <block:minecraft:stone>, <block:minecraft:iron_ore>, 42);
+addOrechidRecipe("orechid/deepslate_iron", <block:minecraft:deepslate>, <block:minecraft:deepslate_iron_ore>, 215);
+addOrechidRecipe("orechid/gold", <block:minecraft:stone>, <block:minecraft:gold_ore>, 24);
+addOrechidRecipe("orechid/deepslate_gold", <block:minecraft:deepslate>, <block:minecraft:deepslate_gold_ore>, 64);
+addOrechidRecipe("orechid/nickel", <block:minecraft:stone>, <block:immersiveengineering:ore_nickel>, 12);
+addOrechidRecipe("orechid/deepslate_nickel", <block:minecraft:deepslate>, <block:immersiveengineering:deepslate_ore_nickel>, 60);
+addOrechidRecipe("orechid/lapis", <block:minecraft:stone>, <block:minecraft:lapis_ore>, 9);
+addOrechidRecipe("orechid/deepslate_lapis", <block:minecraft:deepslate>, <block:minecraft:deepslate_lapis_ore>, 150);
