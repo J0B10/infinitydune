@@ -45,8 +45,8 @@ addBloodAltar("blood_altar/magicianbloodorb", 2, <tag:items:forge:storage_blocks
 craftingTable.removeByName("bloodmagic:blood_altar");
 craftingTable.addShaped("crafting/blood_altar", <item:bloodmagic:altar>, [
     [<item:minecraft:redstone>, <item:minecraft:air>, <item:minecraft:redstone>],
-    [<item:minecraft:redstone>, <item:minecraft:deepslate>, <item:minecraft:redstone>],
-    [<item:minecraft:deepslate>, <tag:items:forge:ingots/tin>, <item:minecraft:deepslate>],
+    [<item:minecraft:redstone_block>, <item:minecraft:deepslate>, <item:minecraft:redstone_block>],
+    [<item:minecraft:deepslate>, <tag:items:forge:storage_blocks/tin>, <item:minecraft:deepslate>],
 ]);
 
 // sacrificial knife from tin, glass and mana dust 
@@ -62,7 +62,7 @@ val weathered_copper = <item:minecraft:weathered_copper> | <item:minecraft:waxed
 craftingTable.removeByName("bloodmagic:incense_altar");
 craftingTable.addShaped("crafting/incense_altar", <item:bloodmagic:incensealtar>, [
     [<tag:items:forge:ingots/bronze>, <item:botania:rune_fire>, <tag:items:forge:ingots/bronze>],
-    [<tag:items:forge:ingots/bronze>, weathered_copper, <tag:items:forge:ingots/bronze>],
+    [<tag:items:forge:storage_blocks/bronze>, weathered_copper, <tag:items:forge:storage_blocks/bronze>],
     [<item:minecraft:deepslate>, (<tag:items:infinitydune:orbs/1> as IIngredient).reuse(), <item:minecraft:deepslate>],
 ]);
 
