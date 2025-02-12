@@ -1,0 +1,22 @@
+{
+  "parent": "infinitydune:age0_stone/wood",
+  "display": {
+    "icon": {
+      "item": "storagedrawers:acacia_full_drawers_4"
+    },
+    "title": "Top-shelf!",
+    "description": "Build a drawer to organize your storage"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "storagedrawers:drawers"
+          }
+        ]
+      }
+    }
+  }
+}

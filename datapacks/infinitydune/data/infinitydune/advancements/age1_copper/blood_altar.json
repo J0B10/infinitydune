@@ -1,0 +1,24 @@
+{
+  "parent": "infinitydune:copper",
+  "display": {
+    "icon": {
+      "item": "bloodmagic:altar"
+    },
+    "title": "Bleeding edge",
+    "description": "Craft a Blood Altar"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bloodmagic:altar"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "infinitydune:age1_copper/orechid",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ingot"
+    },
+    "title": "Iron Age",
+    "description": "Mine and melt some iron ore",
+    "frame": "challenge"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

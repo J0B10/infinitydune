@@ -1,0 +1,24 @@
+{
+  "parent": "infinitydune:age1_copper/blood_altar",
+  "display": {
+    "icon": {
+      "item": "botania:orechid"
+    },
+    "title": "Rock-solid gardening",
+    "description": "Grow an Orechid"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:orechid"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

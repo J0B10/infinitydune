@@ -1,0 +1,44 @@
+{
+  "parent": "infinitydune:age0_stone/wood",
+  "display": {
+    "icon": {
+      "item": "exnihilosequentia:acacia_sieve"
+    },
+    "title": "Sievyphus",
+    "description": "Build a sieve with flint mesh"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "exnihilosequentia:flint_mesh"
+              ]
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "exnihilosequentia:acacia_sieve",
+                  "exnihilosequentia:bamboo_sieve",
+                  "exnihilosequentia:birch_sieve",
+                  "exnihilosequentia:spruce_sieve",
+                  "exnihilosequentia:oak_sieve",
+                  "exnihilosequentia:dark_oak_sieve",
+                  "exnihilosequentia:jungle_sieve",
+                  "exnihilosequentia:cherry_sieve"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

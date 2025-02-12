@@ -1,0 +1,24 @@
+{
+  "parent": "infinitydune:age1_copper/blood_altar",
+  "display": {
+    "icon": {
+      "item": "botania:alchemy_catalyst"
+    },
+    "title": "Ask Nicolas",
+    "description": "Create an Alchemy Catalyst for your Mana Pool"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "botania:alchemy_catalyst"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

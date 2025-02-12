@@ -1,16 +1,17 @@
 {
-    "display": {
-        "icon": {
-            "item": "minecraft:sand"
-        },
-        "title": "infinitydune",
-        "description": "Lost in the desert...",
-        "background": "minecraft:textures/block/sand.png"
+  "display": {
+    "icon": {
+      "item": "minecraft:sand"
     },
-    "criteria": {
-        "item": {
-            "trigger": "minecraft:tick",
-            "conditions": {}
-        }
+    "title": "infinitydune",
+    "description": "Lost in the desert...",
+    "background": "minecraft:textures/block/sand.png",
+    "frame": "goal"
+  },
+  "criteria": {
+    "item": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
     }
+  }
 }
